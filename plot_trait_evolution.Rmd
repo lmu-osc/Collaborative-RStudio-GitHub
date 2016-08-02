@@ -1,0 +1,61 @@
+---
+title: "Trait evolution across species"
+output: 
+    html_document:
+        theme: paper
+---
+
+### setup
+
+First we load the required packages and create some objects to compile data on trait evolution for each species.
+
+```{r warning=F, message=FALSE}
+require(dplyr)
+require(tidyr)
+require(ggplot2)
+require(plotly)
+require(webshot)
+
+t <- 0:100  # generate time vector
+dt <- NULL # generate object to compile time-series data
+cols <- NULL # generate object to compile trendline colours
+```
+
+***
+
+### Simulate trait evolution, iterate over all species files in `params/` folder
+
+We'll use the parameters supplied in your scripts to generate brownian trait evolution trendline for each species.
+
+```{r}
+
+spp.files <- dir("params/")[dir("params/") != "params_tmpl.R"]
+
+for(spp in spp.files){
+  # source parameters for each species
+  source(paste("params", spp, sep= "/"))
+  
+  # generate trait evolution time-series and compile plotting data
+  dt <-  rbind(dt, data.frame(t, 
+                              trait = c(0, rnorm(n = length(t) - 1, sd = sqrt(sig2)) %>% cumsum()),
+                              species = species.name))
+  cols <- c(cols, color)
+}
+
+```
+
+
+
+### Plot trait evolution timeseries
+
+Use the data generated to plot all species.
+
+```{r fig.width = 9}
+
+p <- ggplot(data=dt, aes(x=t, y=trait, group = species, colour = species)) + 
+  geom_line() + scale_colour_manual(values=cols) 
+  
+  ggplotly(p)
+```
+
+
