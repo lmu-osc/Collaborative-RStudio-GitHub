@@ -9,6 +9,6 @@ sig2 <-  3.1415
 species.name <- "Mikeus_simian"
 
 # e.g. "red"
-color <- "Orange"
+color <- "Blue"
 
 # pick a color at http://www.stat.columbia.edu/~tzheng/files/Rcolor.pdf
