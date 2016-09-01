@@ -6,7 +6,7 @@
 sig2 <- 4.2 
     
 # e.g. "anas_krystallinus"    
-species.name <- ale_voyerii
+species.name <- "ale_voyerii"
     
 # e.g. "red"    
 color <- "magenta"
