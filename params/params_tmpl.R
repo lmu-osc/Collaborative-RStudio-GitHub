@@ -6,7 +6,7 @@
 sig2 <-  0.8
     
 # e.g. "anas_krystallinus"    
-species.name <- "valerie"
+species.name <- "Escherichia coli"
     
 # e.g. "red"    
 color <- "#CCE5FF"
