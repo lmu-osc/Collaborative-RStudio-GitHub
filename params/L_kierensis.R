@@ -9,6 +9,6 @@ sig2 <- 2.84
 species.name <-"Lynnus_kierensis"
     
 # e.g. "red"    
-color <-"turquiose"
+color <-"cyan2"
     
 # pick a color at http://www.stat.columbia.edu/~tzheng/files/Rcolor.pdf
