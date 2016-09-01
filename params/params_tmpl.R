@@ -3,12 +3,12 @@
 
 
 # sigma2: 0 < value < 5
-sig2 <-  
+sig2 <-  0.5
     
 # e.g. "anas_krystallinus"    
-species.name <-
+species.name <- "valerie"
     
 # e.g. "red"    
-color <- 
+color <- "#CCE5FF"
     
 # pick a color at http://www.stat.columbia.edu/~tzheng/files/Rcolor.pdf
