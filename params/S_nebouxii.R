@@ -3,7 +3,7 @@
 
 
 # sigma2: 0 < value < 5
-sig2 <-  0.5
+sig2 <-  3.7
   
   # e.g. "anas_krystallinus"    
   species.name <- "Sula_nebouxii_nebouxii"
