@@ -63,7 +63,7 @@ The parameters each participants need to supply are:
 - **`color`:** e.g. `"red"`, `"#FFFFFF"` (tip: **pick a color using Rstudio's Color picker:**)
 
 
-<img src="assets/colour_picker.png" width="350px" />
+<img src="assets/colour_picker.png" width="500px" />
 
 
 <br>
