@@ -9,7 +9,10 @@
 
 ## **your mission**
 
-##### Each participant will **create and contribute a file specifying the parameters** required to simulate and plot their species evolutionary trajectory. We'll collect all participants' files in the master repo. Once all trajectories are simulated they'll be plotted together. Participants will also get to **see the skull and beak shape** corresponding to their species relative body size!
+- Each participant will **create and contribute a file** specifying the parameters required to simulate and plot their species evolutionary trajectory. 
+- We'll collect all participants' files in the master repo. 
+- Once all trajectories are simulated they'll be plotted together. 
+- Participants will then get to **see the skull and beak shape** corresponding to their species relative body size!
 
 <br>
 
@@ -20,14 +23,13 @@
 
 We'll be **accepting pull requests** by remote participants between **2.00 - 3.00 pm**, so anyone can get involved! Follow [**#EvoLottery**](https://twitter.com/search?f=tweets&q=EvoLottery&src=typd) on the day for live updates on twitter.
 
-Here's a [link]() to the material that will be covered in the session to get you up to speed!
-
 ***
 
 <br>
 
 
 # **GO!**
+[link to full session handout]()
 
 #### **github:** fork 
 
