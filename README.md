@@ -93,5 +93,5 @@ The parameters each participants need to supply are:
  
 ### Links to previous evolution lottery sessions:
  
- - [**ISBE Reproducibility Symposium**](Challenge for our generation: open, reproducible and reliable science): [evolutionary lottery](http://rpubs.com/annakrystalli/200121)
+ - [**ISBE Reproducibility Symposium**](https://malikaihle.wordpress.com/openscienceworkshop/program/): [evolutionary lottery](http://rpubs.com/annakrystalli/200121)
  - [**UNAM OpenScience workshop series**](https://annakrystalli.github.io/UNAM/index.html): [evolutionary lottery](http://rpubs.com/annakrystalli/205756)
