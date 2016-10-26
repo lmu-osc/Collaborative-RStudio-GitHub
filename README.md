@@ -29,7 +29,7 @@ We'll be **accepting pull requests** by remote participants between **2.00 - 3.0
 
 
 # **GO!**
-[link to full session handout]()
+[link to full session handout](https://annakrystalli.github.io/Mozfest_github-rstudio/index.html)
 
 #### **github:** fork 
 
