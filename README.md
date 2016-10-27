@@ -4,7 +4,15 @@
 
 <br>
 
-**Beak and skull shapes in birds of prey (“raptors”) are strongly coupled and largely controlled by size.** In this exercise we will use a github repo to collaboratively collate and simulate evolutionary trajectories for each participants' species body size using a simple brownian motion evolutionary model. This assumes evolutionary steps to progress comletely at random. You could say, it's a bit of lottery! 
+> [**Beak and skull shapes in birds of prey (“raptors”) are strongly coupled and largely controlled by size.**](http://eprints.whiterose.ac.uk/99452/1/Bright%20et%20al.%202016_SelfArchive.pdf)
+
+gif provided by the awesome **Jen Bright** [**\@MorphobeakGeek**](https://twitter.com/MorphobeakGeek)!
+
+![](gif.gif)
+
+***
+
+In this exercise we will use a github repo to collaboratively collate and simulate evolutionary trajectories for each participants' species body size using a simple brownian motion evolutionary model. This assumes evolutionary steps to progress comletely at random. You could say, it's a bit of lottery! 
 
 
 ## **our mission**
