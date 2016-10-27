@@ -1,9 +1,29 @@
 ---
-title: "Trait evolution across species"
 output: 
     html_document:
-        theme: paper
+        theme: cerulean
 ---
+# **Evolutionary lottery of skull and beak morphology**
+
+<br>
+
+> [**Beak and skull shapes in birds of prey (“raptors”) are strongly coupled and largely controlled by size.**](http://eprints.whiterose.ac.uk/99452/1/Bright%20et%20al.%202016_SelfArchive.pdf)
+
+gif provided by the awesome **Jen Bright** [**\@MorphobeakGeek**](https://twitter.com/MorphobeakGeek)!
+
+![](gif.gif)
+
+In this exercise we will **use a github repo** to collaboratively collate and *simulate evolutionary trajectories for each participants' species* ***body size*** using a simple brownian motion evolutionary model. This assumes evolutionary steps to progress comletely at random. You could say: 
+
+#### it's a bit of lottery!
+
+<br>
+
+Each participant has **created and contributed a file** specifying the parameters required to simulate and plot their species evolutionary trajectory. We've collect all participants' files in the master repo. Next we need to simulate species trajectories plot them up.
+
+Participants will then get to **see the skull and beak shape** corresponding to their species relative body size!
+
+***
 
 ### setup
 
@@ -15,6 +35,7 @@ require(tidyr)
 require(ggplot2)
 require(plotly)
 require(webshot)
+set.seed(1)
 
 t <- 0:100  # generate time vector
 dt <- NULL # generate object to compile time-series data
@@ -58,4 +79,30 @@ p <- ggplot(data=dt, aes(x=t, y=trait, group = species, colour = species)) +
   ggplotly(p)
 ```
 
+<br>
+
+***
+
+## **Skulls!** find the skull associated with your species:
+
+<br>
+
+Skulls are organised from **largest** to **smallest**. The largest skulls are **vulture-like**, (e.g. **no. 100, the Andean condor** [*Vultur gryphus*](https://en.wikipedia.org/wiki/Andean_condor)) and the  smallest are **falconet-like**, (e.g. **no. 1 Collared falconet** [*Microhierax caerulescens*](https://en.wikipedia.org/wiki/Collared_falconet))
+
+```{r, echo=FALSE, results='asis'}
+
+skull <- dt[dt$t == 100,] 
+skull <- skull[order(skull$trait, decreasing = T),]
+
+gf <- list.files("gif/")
+max.x <- max(abs(dt$trait))
+breaks <- seq(-max.x, max.x, length.out = 101)
+bins <- cut(skull$trait, breaks = breaks, include.lowest = T, labels = F)
+
+for(i in 1:nrow(skull)){
+    cat("### **No: ",bins[i], "** ***", as.character(skull$species[i]),"***", "\n", "\n", sep = "")
+    cat("![](gif/", gf[bins[i]], ")",  "\n", "\n", sep = "")
+}
+
+```
 
