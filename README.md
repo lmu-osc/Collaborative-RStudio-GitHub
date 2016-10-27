@@ -6,7 +6,7 @@
 
 > [**Beak and skull shapes in birds of prey (“raptors”) are strongly coupled and largely controlled by size.**](http://eprints.whiterose.ac.uk/99452/1/Bright%20et%20al.%202016_SelfArchive.pdf)
 
-gif provided by the awesome **Jen Bright** [**\@MorphobeakGeek**](https://twitter.com/MorphobeakGeek)!
+gif provided by the awesome **Jen Bright** [**@MorphobeakGeek**](https://twitter.com/MorphobeakGeek)!
 
 ![](gif.gif)
 
