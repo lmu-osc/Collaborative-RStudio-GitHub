@@ -98,7 +98,9 @@ The parameters each participants need to supply are:
 <br>
 
 ***
- 
+
+### Once all parameters are collated, look out for the [results](http://rpubs.com/annakrystalli/MozFest_EvoLottery)!
+
 ### Links to previous evolution lottery sessions:
  
  - [**ISBE Reproducibility Symposium**](https://malikaihle.wordpress.com/openscienceworkshop/program/): [evolutionary lottery](http://rpubs.com/annakrystalli/200121)
