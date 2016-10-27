@@ -3,12 +3,12 @@
 
 
 # sigma2: 0 < value < 5
-sig2 <-  0.8
+sig2 <-  
     
 # e.g. "anas_krystallinus"    
-species.name <- "Escherichia coli"
+species.name <- 
     
 # e.g. "red"    
-color <- "#CCE5FF"
+color <- 
     
-# pick a color at http://www.stat.columbia.edu/~tzheng/files/Rcolor.pdf
+# tip: pick a color at using rstudio colour picker. Addins > Colour Picker
