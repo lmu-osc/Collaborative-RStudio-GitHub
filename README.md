@@ -25,11 +25,9 @@ In this exercise we will use a github repo to collaboratively collate and simula
 <br>
 
 ### **Next Session: Join Remotely!**
-## [**MozFest 2016**](https://mozillafestival.org/): **Saturday, 29 Oct 1:00pm-3:00pm**
-#### [**Collaboration through Github and Rstudio**](https://app.mozillafestival.org/#_session-259)
+## [**NHM STARS training course**](https://mozillafestival.org/): **Thursday, 18th May 11:00-12:00**
 
-
-We'll be **accepting pull requests** by remote participants between **2.00 - 3.00 pm**, so anyone can get involved! Follow [**#EvoLottery**](https://twitter.com/search?f=tweets&q=EvoLottery&src=typd) on the day for live updates on twitter.
+We'll be **accepting pull requests** by remote participants between **11.30 - 12.00**, so anyone can get involved! Follow [**#EvoLottery**](https://twitter.com/search?f=tweets&q=EvoLottery&src=typd) on the day for live updates on twitter.
 
 ***
 
@@ -58,6 +56,8 @@ We'll be **accepting pull requests** by remote participants between **2.00 - 3.0
 
 A template is provided in the repo, in folder `/params` named `params_tmpl.R`. Open the `params_tmpl.R` and **save as** to create a duplicate template. Name the template using the name of your species. 
 
+##### **!! PLEASE DO NOT EDIT THE `params_tmpl.R` FILE !!**
+
 <br>
 
 #### **rstudio:** edit your params `.R` script
@@ -78,7 +78,7 @@ The parameters each participants need to supply are:
 
 #### **rstudio:** save and commit the changes
 
-- Use the git tab, tick the box next to your new script and commit. 
+- Use the git tab, tick the box next to **your new script ONLY** and commit. 
 
 - Supply a descriptive message of the commit.
 
@@ -93,15 +93,16 @@ The parameters each participants need to supply are:
  - create a pull request to merge your changes to the master repo
  
 #### **github:** check to see my response to your request
- - most likely it'll be a thumbs up! But I might also request a correction if I spot an error.
+ - most likely it'll be a thumbs up! But I might also **request a correction** if I spot an error.
 
 <br>
 
 ***
 
-### Once all parameters are collated, look out for the [results](http://rpubs.com/annakrystalli/MozFest_EvoLottery)!
+### Once all parameters are collated, look out for the [results](http://rpubs.com/annakrystalli/277778)!
 
 ### Links to previous evolution lottery sessions:
  
+ - [**Mozfest Github :heart: Rstudio session**](https://rpubs.com/annakrystalli/MozFest_EvoLottery2)
  - [**ISBE Reproducibility Symposium**](https://malikaihle.wordpress.com/openscienceworkshop/program/): [evolutionary lottery](http://rpubs.com/annakrystalli/200121)
  - [**UNAM OpenScience workshop series**](https://annakrystalli.github.io/UNAM/index.html): [evolutionary lottery](http://rpubs.com/annakrystalli/205756)
