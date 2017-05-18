@@ -4,7 +4,8 @@
 # input parameters
 
 # sigma2: 0 < value < 5
-sig2 <- runif(1, 0, 5)
+sig2 <- 1.093226
+  # formerly runif(1, 0, 5)
     
 # e.g. "anas_krystallinus"    
 species.name <- "banana_raptorius"
