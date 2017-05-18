@@ -10,6 +10,6 @@ sig2 <-
   species.name <- "emma_dunnensis"
   
   # e.g. "red"    
-  color <- "#00C5CD"
+  color <- "lavender"
   
   # tip: pick a color at using rstudio colour picker. Addins > Colour Picker
