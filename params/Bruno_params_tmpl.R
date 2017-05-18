@@ -7,7 +7,7 @@
 sig2 <- 3 
     
 # e.g. "anas_krystallinus"    
-species.name <- "Acantaster planci"
+species.name <- "Acanthaster planci"
     
 # e.g. "red"    
 color <-c("#00BFFF") 
