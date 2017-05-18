@@ -10,6 +10,6 @@ sig2 <-
 species.name <- 
     
 # e.g. "red"    
-color <- "
+color <- 
     
 # tip: pick a color at using rstudio colour picker. Addins > Colour Picker
