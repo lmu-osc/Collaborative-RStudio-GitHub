@@ -99,7 +99,7 @@ The parameters each participants need to supply are:
 
 ***
 
-### Once all parameters are collated, look out for the [results](http://rpubs.com/annakrystalli/277778)!
+### Once all parameters are collated, look out for the [results](http://rpubs.com/annakrystalli/278074)!
 
 ### Links to previous evolution lottery sessions:
  
