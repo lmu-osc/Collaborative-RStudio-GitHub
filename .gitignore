@@ -4,3 +4,6 @@
 .Ruserdata
 .Rproj
 *.DS_Store
+gif/
+rsconnect
+*html
