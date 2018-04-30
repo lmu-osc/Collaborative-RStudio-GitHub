@@ -87,7 +87,7 @@ p <- ggplot(data=dt, aes(x=t, y=trait, group = species, colour = species)) +
 
 <br>
 
-Skulls are organised from **largest** to **smallest**. The largest skulls are **vulture-like**, (e.g. **no. 100, the Andean condor** [*Vultur gryphus*](https://en.wikipedia.org/wiki/Andean_condor)) and the  smallest are **falconet-like**, (e.g. **no. 1 Collared falconet** [*Microhierax caerulescens*](https://en.wikipedia.org/wiki/Collared_falconet))
+Skulls are organised from **largest** to **smallest**. The largest skulls are **vulture-like**, (e.g. **no. 50, the Andean condor** [*Vultur gryphus*](https://en.wikipedia.org/wiki/Andean_condor)) and the  smallest are **falconet-like**, (e.g. **no. 1 Collared falconet** [*Microhierax caerulescens*](https://en.wikipedia.org/wiki/Collared_falconet))
 
 ```{r, echo=FALSE, results='asis'}
 
@@ -96,7 +96,7 @@ skull <- skull[order(skull$trait, decreasing = T),]
 
 gf <- list.files("gif/")
 max.x <- max(abs(dt$trait))
-breaks <- seq(-max.x, max.x, length.out = 101)
+breaks <- seq(-max.x, max.x, length.out = 51)
 bins <- cut(skull$trait, breaks = breaks, include.lowest = T, labels = F)
 
 for(i in 1:nrow(skull)){
