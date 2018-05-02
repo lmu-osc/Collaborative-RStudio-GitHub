@@ -10,7 +10,7 @@ sig2 <- 1.7
   species.name <- "soph_willis"
   
   # e.g. "red"    
-  color <- mistyrose2
+  color <- "mistyrose2"
   
   # tip: pick a color at using rstudio colour picker. Addins > Colour Picker
   
