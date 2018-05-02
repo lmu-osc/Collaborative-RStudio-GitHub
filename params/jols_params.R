@@ -7,7 +7,7 @@
 sig2 <- 3
   
   # e.g. "anas_krystallinus"    
-  species.name <- jols_boraensis
+  species.name <- "jols_boraensis"
   
   # e.g. "red"    
   color <- "blueviolet"
