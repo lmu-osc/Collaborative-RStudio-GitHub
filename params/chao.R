@@ -3,11 +3,11 @@
 # ________________________________________________
 # input parameters
 
-# sigma2: 0 < 1< 5
+# sigma2: 0 < 1 < 5
 sig2 <- 1
     
 # e.g. "anas_krystallinus"    
-species.name <- chao
+species.name <- "chao"
     
 # e.g. "orange"    
 color <- "orange"
