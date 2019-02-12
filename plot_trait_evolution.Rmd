@@ -31,10 +31,8 @@ First we load the required packages and create some objects to compile data on t
 
 ```{r warning=F, message=FALSE}
 require(dplyr)
-require(tidyr)
 require(ggplot2)
 require(plotly)
-require(webshot)
 set.seed(1)
 
 t <- 0:100  # generate time vector
@@ -54,7 +52,7 @@ spp.files <- dir("params/")[dir("params/") != "params_tmpl.R"]
 
 for(spp in spp.files){
   # source parameters for each species
-  source(paste("params", spp, sep= "/"))
+  source(file.path("params", spp))
   
   # generate trait evolution time-series and compile plotting data
   dt <-  rbind(dt, data.frame(t, 
@@ -73,8 +71,9 @@ Use the data generated to plot all species.
 
 ```{r fig.width = 9}
 
-p <- ggplot(data=dt, aes(x=t, y=trait, group = species, colour = species)) + 
-  geom_line() + scale_colour_manual(values=cols) 
+p <- ggplot(data = dt, aes(x = t, y = trait, group = species, colour = species)) + 
+  geom_line() + 
+  scale_colour_manual(values = cols) 
   
   ggplotly(p)
 ```
