@@ -7,9 +7,9 @@
 sig2 <- 4.6
     
 # e.g. "anas_krystallinus"    
-species.name <- "AlexWinsorus"
+species.name <- "AlexWinsorus22"
     
 # e.g. "red"    
-color <- "red"
+color <- "pink"
     
 # tip: pick a color at using rstudio colour picker. Addins > Colour Picker
