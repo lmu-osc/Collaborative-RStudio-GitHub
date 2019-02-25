@@ -7,7 +7,7 @@
 sig2 <- 3
     
 # e.g. "anas_krystallinus"    
-species.name <- gal_cobbinia
+species.name <- "gal_cobbinia"
     
 # e.g. "red"    
 color <- "green"

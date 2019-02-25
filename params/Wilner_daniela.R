@@ -7,7 +7,7 @@
 sig2 <- 1
     
 # e.g. "anas_krystallinus"    
-species.name <- Wilner_daniela
+species.name <- "Wilner_daniela"
     
 # e.g. "red"    
 color <- c("#20B2AA")
