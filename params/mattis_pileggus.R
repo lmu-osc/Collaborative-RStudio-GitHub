@@ -10,6 +10,8 @@ sig2 <- 3
 species.name <- "mattis_pileggus"
     
 # e.g. "red"    
+
 color <- "red"
+
     
 # tip: pick a color at using rstudio colour picker. Addins > Colour Picker
