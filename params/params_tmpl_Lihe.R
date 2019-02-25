@@ -10,7 +10,7 @@ sig2 <- 3
 species.name <- anas_liheliu
     
 # e.g. "red"    
-color <- green
+color <- "green"
     
 # tip: pick a color at using rstudio colour picker. Addins > Colour Picker
 
