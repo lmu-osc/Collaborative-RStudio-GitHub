@@ -6,7 +6,7 @@
 # sigma2: 0 < value < 5
 sig2 <- 3.75
 # e.g. "anas_krystallinus"    
-species.name <- bitey_McBiterson
+species.name <- 'bitey_McBiterson'
     
 # e.g. "red"    
 color <- 'darkgoldenrod1'
