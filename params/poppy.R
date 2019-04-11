@@ -11,6 +11,6 @@ sig2 <- 3.9568421
 species.name <- "pops"
     
 # e.g. "red"    
-color <- "goldenrod2"
+color <- "goldenrod1"
     
 # tip: pick a color at using rstudio colour picker. Addins > Colour Picker
