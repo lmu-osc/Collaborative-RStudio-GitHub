@@ -4,10 +4,10 @@
 # input parameters
 
 # sigma2: 0 < value < 5
-sig2 <- 
+sig2 <- "3"
     
 # e.g. "anas_krystallinus"    
-species.name <- 
+species.name <- "georgus daus"
     
 # e.g. "red"    
 color <- "blue"
