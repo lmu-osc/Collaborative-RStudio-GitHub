@@ -7,7 +7,7 @@
 sig2 <- 4.3
     
 # e.g. "anas_krystallinus"    
-species.name <- taliesin_jaffe
+species.name <- "taliesin_jaffe"
     
 # e.g. "red"    
 color <- "darkslateblue"
