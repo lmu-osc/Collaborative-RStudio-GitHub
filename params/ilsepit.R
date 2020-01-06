@@ -10,4 +10,4 @@ sig2 <- 1.21
 species.name <- "ilsepit"
     
 # e.g. "red"    
-color <- c("#B23AEE")
+color <- "#B23AEE"
