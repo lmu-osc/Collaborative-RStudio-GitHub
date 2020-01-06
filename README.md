@@ -22,20 +22,13 @@ In this exercise we will use a github repo to collaboratively collate and simula
 - Once all trajectories are simulated they'll be plotted together. 
 - Participants will then get to **see the skull and beak shape** corresponding to their species relative body size!
 
-<br>
 
-### **Next Session: Join Remotely!**
-## [**NHM STARS training course**](https://mozillafestival.org/): **Thursday, 18th May 11:00-12:00**
-
-We'll be **accepting pull requests** by remote participants between **11.30 - 12.00**, so anyone can get involved! Follow [**#EvoLottery**](https://twitter.com/search?f=tweets&q=EvoLottery&src=typd) on the day for live updates on twitter.
-
-***
 
 <br>
 
 
 # **GO!**
-[link to full session handout](https://annakrystalli.github.io/Mozfest_github-rstudio/index.html)
+[link to full session handout](https://annakrystalli.me/Mozfest_github-rstudio/evolottery.html)
 
 #### **github:** fork 
 

@@ -3,13 +3,13 @@
 # ________________________________________________
 # input parameters
 
-# sigma2: 0 < value < 5
-sig2 <- 
+# sigma2: 0 < value < 5c("#3F7AA1", "#FFFFFF", "#FFFFFF", "#FFFFFF")
+sig2 <- 4.1
     
 # e.g. "anas_krystallinus"    
-species.name <- 
+species.name <- "corvidae"
     
 # e.g. "red"    
-color <- 
+color <- "#3f7aa1"
     
 # tip: pick a color at using rstudio colour picker. Addins > Colour Picker (to install: install.packages("colourpicker"))
