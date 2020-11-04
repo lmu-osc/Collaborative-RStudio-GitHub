@@ -5,12 +5,12 @@ To avoid conflict during this collaborative coding exercice (i.e. contributors e
 
 1. **RStdudio**: select `params/params_tmpl.R` and click  on 'More', 'Copy', and give it the name of your imaginary species or your name. **Please to not overwrite or edit the file `params/params_tmpl.R`.**
 
-<!--     ![](./assets/copy-params_tmpl.png)  -->
-<!--     ![](./assets/rename-copy.png)  -->
+![](./assets/copy-params_tmpl.png)
+![](./assets/rename-copy.png)
 
 2. **RStdudio**: edit your `.R` script
 
-<!--     ![](./assets/edit-file.png)  -->
+![](./assets/edit-file.png)
 
 The parameters each participants need to supply are:
 
