@@ -2,12 +2,12 @@
 
 ***
 
-1. RStdudio: push your changes to github
+1. **RStdudio**: push your changes to github by clicking the green arrow up in the git tab.
 
-<!--     ![](./assets/.png)  -->
+<!--     ![](./assets/push-rstudio.png)  -->
 
-2. GitHub: verify your changes are visible in your github repo
+2. **GitHub**: verify your changes are visible in your GitHub repository
 
-
+<!--     ![](./assets/push-github.png)  -->
 
 ***
