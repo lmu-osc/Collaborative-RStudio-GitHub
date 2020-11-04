@@ -8,5 +8,6 @@
 
 2. **GitHub**: verify that your changes were integrated in your GitHub repository
 
+<!-- ![](./assets/push-github.png) -->
 
 ***
