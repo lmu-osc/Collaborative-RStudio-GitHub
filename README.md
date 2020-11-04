@@ -37,6 +37,6 @@ The material is self-paced and it is necessary that you work through the section
 * [Push](./push.md) - Update your remote repository with your local changes
 * [Pull request](./pull-request.md) - Ask your collaborator to integrate your changes in their repository
 * [Merged results](./merge.md) - Observe the merge of all contributions
-* [Pull the upstream repository into your fork](./pull-upstream) - Update your fork with all contributions made to the original repository
+* [Pull the upstream repository into your fork](./pull-upstream.md) - Update your fork with all contributions made to the original repository
 
 ***
