@@ -9,19 +9,19 @@
 
 <!--     ![](./assets/new-project.png)  -->
 
-3. **RStdudio**: select `checkout a project from a version control repository`
+3. **RStdudio**: select `Checkout a project from a version control repository`
 
 <!--     ![](./assets/version-control-project.png)  -->
 
-4. **RStudio**: select `clone a projetc from a Git repository`
+4. **RStudio**: select `Clone a projetc from a Git repository`
 
 <!--     ![](./assets/git-project.png)  -->
 
-5. **RStudio**: paste the URL of your GitHub repository into 'Reprository URL'. Click `Create Project`
+5. **RStudio**: paste the URL of your GitHub repository into 'Repository URL'. Click `Create Project`
 
 <!--     ![](./assets/paste-url.png)  -->
 
-6. RStudio: Click on the 'Files' tab to check that it contains all the files from the GitHub repository
+6. **RStudio**: Click on the Files tab to check that it contains all the files from the GitHub repository
 
 <!--     ![](./assets/files-tab.png)  -->
 
