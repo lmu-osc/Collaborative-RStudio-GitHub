@@ -26,7 +26,7 @@ The parameters each participants need to supply are:
 
 3. **RStdudio**: save your file and in the Git tab, tick the box next to **your new script ONLY** to stage your file and click 'commit'.
 
-<!--     ![](./assets/stage.png)  -->
+![](./assets/stage.png)
 
 4. **RStdudio**: supply a descriptive message of the commit and click `commit`
 
