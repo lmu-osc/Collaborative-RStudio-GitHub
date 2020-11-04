@@ -30,7 +30,7 @@ The parameters each participants need to supply are:
 
 4. **RStdudio**: supply a descriptive message of the commit and click `commit`
 
-<!--     ![](./assets/commit.png)  -->
+![](./assets/commit.png)
 
 
 ***
