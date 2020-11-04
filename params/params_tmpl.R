@@ -12,4 +12,5 @@ species.name <-
 # e.g. "red"    
 color <- 
     
-# tip: pick a color at using rstudio colour picker. Addins > Colour Picker (to install: install.packages("colourpicker"))
+# tip: pick a color using rstudio colour picker. 
+# Addins > Colour Picker (to install: install.packages("colourpicker"))

@@ -7,7 +7,7 @@
 sig2 <- 3.5
     
 # e.g. "anas_krystallinus"    
-species.name <- "Malikanus"
+species.name <- "malikus_rocks"
     
 # e.g. "red"    
 color <- "#311DB3"
