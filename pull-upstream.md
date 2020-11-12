@@ -14,12 +14,13 @@ To integrate all the contributions made to the original repository into your loc
 3. **Shell**: type the command to pull the original repository and branch you wish to obtain locally  
 `git pull https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git BRANCH_NAME`
 
-<!--     ![](./assets/command-line.png)  -->
+![](./assets/command-line.png)
 
 4. **RStdudio**: check in the Files tab that the new contributions appeared.
 
 5. **RStdudio**: push those local changes to your GitHub repository
-<!--     ![](./assets/final-push.png)  -->
+
+![](./assets/final-push.png)
 
 
 You are done!
