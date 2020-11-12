@@ -5,11 +5,11 @@
 
 ![](./assets/clone-button.png)
 
-2. **RStdudio**: create a new project
+2. **RStudio**: create a new project
 
 ![](./assets/new-project.png)
 
-3. **RStdudio**: select `Checkout a project from a version control repository`
+3. **RStudio**: select `Checkout a project from a version control repository`
 
 ![](./assets/version-control-project.png)
 
