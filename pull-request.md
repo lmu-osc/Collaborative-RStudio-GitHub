@@ -19,3 +19,5 @@
 ![](./assets/pull-request-success.png)
 
 ***
+
+[Previous](./push.md) | [Next](./merge.md)
