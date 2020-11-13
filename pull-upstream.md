@@ -26,3 +26,5 @@ To integrate all the contributions made to the original repository into your loc
 You are done!
 
 ***
+
+[Previous](./merge.md) | [Home](./README.md)
