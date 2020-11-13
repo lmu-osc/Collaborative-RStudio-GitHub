@@ -18,3 +18,5 @@
 You can see the full result of a previous session [here](https://rpubs.com/annakrystalli/278074).
 
 ***
+
+[Previous](./pull-request.md) | [Next](./pull-upstream.md)
