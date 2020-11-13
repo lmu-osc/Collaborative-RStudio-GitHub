@@ -34,3 +34,5 @@ The parameters each participants need to supply are:
 
 
 ***
+
+[Previous](./clone.md) | [Next](./push.md)
