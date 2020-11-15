@@ -1,7 +1,7 @@
 # Clone your GitHub repository
 
 ***
-1. **GitHub**: click on the green `Code` or `Clone` button and copy your repository's URL
+1. **GitHub**: click on the green `Code` or `Clone` button and copy **your** repository's URL
 
 ![](./assets/clone-button.png)
 
@@ -17,7 +17,7 @@
 
 ![](./assets/git-project.png)
 
-5. **RStudio**: paste the URL of your GitHub repository into 'Repository URL'. Click `Create Project`
+5. **RStudio**: paste the URL of **your** GitHub repository into 'Repository URL'. Click `Create Project`
 
 ![](./assets/paste-url.png)
 
