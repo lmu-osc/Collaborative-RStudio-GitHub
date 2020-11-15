@@ -8,7 +8,7 @@ This work was originally created by [Anna Krystalli](https://github.com/annakrys
 ## Overview of the exercice
 
 In this session, you will  
-* **fork** a github repository (i.e. copy a collaborator's repository to your own GitHub account)    
+* **fork** a GitHub repository (i.e. copy a collaborator's repository to your own GitHub account)    
 * **clone** it locally (i.e. copy it to your computer while maintaining a connection to your remote (GitHub) version)    
 * create a new file locally and **commit** it to your local repository (i.e. save the file locally in your version control system)  
 * **push** your changes to your GitHub version (i.e. synchronise your local changes with your remote repository)  
