@@ -7,7 +7,7 @@
 sig2 <- 2.17
     
 # e.g. "anas_krystallinus"    
-species.name <- eusebius_curcanus
+species.name <- "eusebius_curcanus"
     
 # e.g. "red"    
 color <- "cyan"
