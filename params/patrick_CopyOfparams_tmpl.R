@@ -11,7 +11,7 @@ sig2 <- 3.5
 species.name <- "patrickia_phillipsus"
     
 # e.g. "red"    
-color <- colourPicker(numCols = 1)
+color <- "blue"
     
 # tip: pick a color using rstudio colour picker. 
 # Addins > Colour Picker (to install: install.packages("colourpicker"))
