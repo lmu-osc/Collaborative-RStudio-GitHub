@@ -9,8 +9,8 @@ sig2 <- 3
 # e.g. "anas_krystallinus"    
 species.name <- "tychaiomorphy"
     
-# e.g. "orchid"    
-color <- 
+# e.g. "red"    
+color <- "orchid"
     
 # tip: pick a color using rstudio colour picker. 
 # Addins > Colour Picker (to install: install.packages("colourpicker"))
