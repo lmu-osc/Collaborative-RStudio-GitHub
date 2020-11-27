@@ -7,7 +7,7 @@
 sig2 <- 3.7
     
 # e.g. "anas_krystallinus"    
-species.name <- caio_saur
+species.name <- "caio_saur"
     
 # e.g. "red"    
 color <- "119BEB"
