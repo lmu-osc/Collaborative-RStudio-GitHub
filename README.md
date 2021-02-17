@@ -7,6 +7,8 @@ This work was originally created by [Anna Krystalli](https://github.com/annakrys
 
 ## Overview of the exercice
 
+This session follows-up from the [Introduction to RStudio, Git, and GitHub](https://github.com/MalikaIhle/Introduction-RStudio-Git-GitHub) and is accompanied by this 10 min introductory [videorecording](https://osf.io/dcqt9/). 
+
 In this session, you will  
 * **fork** a GitHub repository (i.e. copy a collaborator's repository to your own GitHub account)    
 * **clone** it locally (i.e. copy it to your computer while maintaining a connection to your remote (GitHub) version)    
