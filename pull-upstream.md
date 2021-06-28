@@ -8,8 +8,8 @@ To integrate all the contributions made to the original repository into your loc
 
 ![](./assets/open-shell.png)
 
-2. **Shell**: in the command line, you will first make sure you are on the branch you wish to receive the modifications (today we didn't create branches, and the default branch is called 'master' (historically) or 'main' (as part of the company's effort to remove unnecessary references to slavery)). Type  
-`git checkout DEFAULT_BRANCH_NAME`
+2. **Shell**: in the command line, you will first make sure you are on the branch you wish to receive the modifications (today we didn't create branches, and the default branch is called 'master' (historically) or 'main' (as part of the company's effort to remove unnecessary references to slavery)). **The historical 'master' branch (the default branch) of this repository has been renamed 'main' (the screenshots still indicate 'master')**. Type  
+`git checkout DEFAULT_BRANCH_NAME` 
 
 3. **Shell**: type the command to pull the original repository and branch you wish to obtain locally  
 `git pull https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git BRANCH_NAME`
