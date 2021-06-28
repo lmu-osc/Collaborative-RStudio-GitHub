@@ -1,7 +1,7 @@
 # Fork a GitHub repository
 
 ***
-1. **GitHub**: go to https://github.com/MalikaIhle/Collaborative-RStudio-GitHub
+1. **GitHub**: go to [https://github.com/MalikaIhle/Collaborative-RStudio-GitHub](https://github.com/MalikaIhle/Collaborative-RStudio-GitHub)
 
 ![](./assets/malika-repo.png)
 
