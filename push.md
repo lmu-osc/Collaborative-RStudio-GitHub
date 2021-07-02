@@ -6,7 +6,7 @@
 
 ![](./assets/push-rstudio.png)
 
-2. **GitHub**: verify that your changes were integrated in your GitHub repository
+2. **GitHub**: verify that your changes were integrated in your GitHub repository (again, the screenshot here indicates `HEAD -> master` while yours should indicate `HEAD -> main`)
 
 ![](./assets/push-github.png)
 
