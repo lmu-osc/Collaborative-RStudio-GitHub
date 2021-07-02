@@ -1,7 +1,7 @@
 # Commit changes locally
 
 ***
-To avoid conflict during this collaborative coding exercice (i.e. contributors editing the same line of code at the same time), today, we will work on different files altogether. To avoid conflict in future projects, no tool will be able to replace good communication. However, GitHub offers tools to help that communicaiton, called [GitHub issues](https://guides.github.com/features/issues/). And if need be, you could still [resolve conflicts using the command line](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/resolving-a-merge-conflict-using-the-command-line). Today, to avoid conlfict, you will copy a template file and edit your own copy.
+To avoid conflict during this collaborative coding exercice (i.e. contributors editing the same line of code at the same time), today, we will work on different files altogether. To avoid conflict in future projects, no tool will be able to replace good communication. However, GitHub offers tools to help that communication, called [GitHub issues](https://guides.github.com/features/issues/). And if need be, you could still [resolve conflicts using the command line](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/resolving-a-merge-conflict-using-the-command-line). Today, to avoid conlfict, you will copy a template file and edit your own copy.
 
 1. **RStudio**: select `params/params_tmpl.R` and click  on 'More', 'Copy', and give it the name of your imaginary species or your name. **Please to not overwrite or edit the file `params/params_tmpl.R`.**
 
@@ -24,7 +24,7 @@ The parameters each participants need to supply are:
 
 <img src="assets/colour_picker.png" width="500px" />
 
-3. **RStudio**: save your file and in the Git tab, tick the box next to **your new script ONLY** to stage your file and click 'commit'.
+3. **RStudio**: save your file and in the Git tab, tick the box next to *** **your new script ONLY** *** to stage your file and click 'commit'.
 
 ![](./assets/stage.png)
 
