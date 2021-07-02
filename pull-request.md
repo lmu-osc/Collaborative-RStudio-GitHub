@@ -14,7 +14,7 @@
 
 ![](./assets/pull-request-message.png)
 
-4. **GitHub**: check to see your collaborator's response to your request and check the original repository to see your merged changes. Most likely it will be a thumbs up! But your collaborator might also **request a correction** if they spot an error.  
+4. **GitHub**: check to see your collaborator's response to your request and check the original repository to see your merged changes. Most likely it will be a thumbs up! But your collaborator might also **request a correction** if they spot an error.  If this session is live: go see the instructor and ask them to watch while they merge your pull request.
 
 ![](./assets/pull-request-success.png)
 
