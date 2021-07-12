@@ -6,7 +6,7 @@
 
 ![](./assets/pull-request-button.png)
 
-2. **GitHub**: make sure the base repository is the Malika's original one and the head fork is yours, both set on their main branch (these repositories should only have one branch anyway; historically called 'master' (as in the screenshots) and now 'main'. Branches are diverging versions of a file **within** a repository - we will not cover this concept today). Check that your requested merge does not create any conflict. If all is good, click on `Create pull request`
+2. **GitHub**: make sure the base repository is Malika's original one and the head fork is yours, both set on their main branch (these repositories should only have one branch anyway called 'main'. Branches are diverging versions of a file **within** a repository - we will not cover this concept today). Check that your requested merge does not create any conflict. If all is good, click on `Create pull request`
 
 ![](./assets/create-pull-request.png)
 
