@@ -10,6 +10,6 @@ sig2 <- 4.7
 species.name <- "rupicola_peruvianus"
     
 # e.g. "red"    
-color <- #D6604D"
+color <- "purple"
     
 # tip: pick a color using rstudio colour picker. 
