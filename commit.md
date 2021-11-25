@@ -5,32 +5,32 @@ To avoid conflict during this collaborative coding exercice (i.e. contributors e
 
 1. **RStudio**: select `params/params_tmpl.R` and click  on 'More', 'Copy', and give it the name of your imaginary species or your name. **Please to not overwrite or edit the file `params/params_tmpl.R`.**
 
-![](./assets/copy-params_tmpl.png)
-![](./assets/rename-copy.png)
+ ![](./assets/copy-params_tmpl.png)
+ ![](./assets/rename-copy.png)
 
 2. **RStudio**: edit your `.R` script
 
-![](./assets/edit-file.png)
+ ![](./assets/edit-file.png)
 
-The parameters each participants need to supply are:
+ The parameters each participants need to supply are:
 
-- **`sig2`:** A numeric value greater than 0 but smaller than 5
+ - **`sig2`:** A numeric value greater than 0 but smaller than 5
 
-- **`species.name`:** a character string e.g. `"anas_krystallinus"`. Try to create a species name out of your name!
+ - **`species.name`:** a character string e.g. `"anas_krystallinus"`. Try to create a species name out of your name!
 
-- **`color`:** e.g. `"red"`, `"#FFFFFF"`
+ - **`color`:** e.g. `"red"`, `"#FFFFFF"`
 
-(optional) If you want, you can use the RStudio colour picker to select a color. If you don't have it installed, type `install.packages("colourpicker")` in your console. 
+ (optional) If you want, you can use the RStudio colour picker to select a color. If you don't have it installed, type `install.packages("colourpicker")` in your console. 
 
-<img src="assets/colour_picker.png" width="500px" />
+ <img src="assets/colour_picker.png" width="500px" />
 
 3. **RStudio**: save your file and in the Git tab, tick the box next to *** **your new script ONLY** *** to stage your file and click 'commit'.
 
-![](./assets/stage.png)
+ ![](./assets/stage.png)
 
 4. **RStudio**: supply a descriptive message of the commit and click `commit`
 
-![](./assets/commit.png)
+ ![](./assets/commit.png)
 
 
 ***
