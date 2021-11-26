@@ -8,7 +8,7 @@ sig2 <- 3.7
 species.name <- "dianacitus_opaloid" 
     
 # e.g. "red"    
-color <- "c("#7737B0", "#FFFFFF", "#FFFFFF")"
+color <- "#7737B0"
 
 
 
