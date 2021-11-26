@@ -12,7 +12,7 @@ To integrate all the contributions made to the original repository into your loc
     `git checkout DEFAULT_BRANCH_NAME` 
 
 3. **Shell**: type the command to pull the original repository and branch you wish to obtain locally  
-    `git pull git@github.com: ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git`
+    `git pull git@github.com:ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git`
 
     ![](./assets/command-line.png)
 
