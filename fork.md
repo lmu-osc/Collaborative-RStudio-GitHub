@@ -1,14 +1,15 @@
 # Fork a GitHub repository
 
 ***
-1. **GitHub**: go to [https://github.com/MalikaIhle/Collaborative-RStudio-GitHub](https://github.com/MalikaIhle/Collaborative-RStudio-GitHub)
+<ol>
+ <li> **GitHub**: go to [https://github.com/MalikaIhle/Collaborative-RStudio-GitHub](https://github.com/MalikaIhle/Collaborative-RStudio-GitHub)</li>
 
- ![](./assets/malika-repo.png)
+![](./assets/malika-repo.png)
 
-2. **GitHub**: click on `Fork`. GitHub is creating your own copy of the repository in your GitHub account. Forks are linked and traceable.
+<li> **GitHub**: click on `Fork`. GitHub is creating your own copy of the repository in your GitHub account. Forks are linked and traceable.</li>
 
- ![](./assets/fork-button.png)
- ![](./assets/fork-process.png)
+![](./assets/fork-button.png)
+![](./assets/fork-process.png)
 
 ***
 
