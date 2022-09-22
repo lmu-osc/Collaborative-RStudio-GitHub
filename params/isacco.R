@@ -10,7 +10,7 @@ sig2 <- 3
 species.name <- "procyon_lotor"
     
 # e.g. "red"    
-color <- "blue"
+color <- "#7DD9DB"
     
 # tip: pick a color using rstudio colour picker. 
 # Addins > Colour Picker (to install: install.packages("colourpicker"))
