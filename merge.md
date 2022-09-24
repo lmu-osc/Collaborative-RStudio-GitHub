@@ -4,7 +4,7 @@
 
 If the session is live:  
 
-1. **Collaborator's screen**: Once all parameters are collated, look out for the results on your collaborator/instructor's screen. After accepting your pull requests, they will pull their GitHub repository into their local repository. 
+1. **Collaborator's screen**: Once all parameters are collated, look out for the results on your collaborator/instructor's screen. After inspecting and accepting your pull requests (in the pull request tab in their GitHub repository), they will pull their GitHub repository into their local repository. 
 
     ![](./assets/pull.png)
 
