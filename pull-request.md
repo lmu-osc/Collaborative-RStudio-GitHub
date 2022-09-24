@@ -2,7 +2,7 @@
 
 ***
 
-1. **GitHub**: in your repository, click on `new pull request` 
+1. **GitHub**: in your repository, click on '**contribute**' and '**open pull request**' 
 
     ![](./assets/pull-request-button.png)
 
