@@ -1,0 +1,16 @@
+
+# ________________________________________________
+# input parameters
+
+# sigma2: 0 < value < 5
+sig2 <- 3
+    
+# e.g. "anas_krystallinus"    
+species.name <- "laurus_testbird"
+    
+# e.g. "red"    
+#install.packages("colourpicker")
+color <- "blue"
+    
+# tip: pick a color using rstudio colour picker. 
+# Addins > Colour Picker (to install: install.packages("colourpicker"))
