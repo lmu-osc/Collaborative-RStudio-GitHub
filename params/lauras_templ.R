@@ -9,7 +9,7 @@ sig2 <- 3
 species.name <- "laurus_testbird"
     
 # e.g. "red"    
-install.packages("colourpicker")
+#install.packages("colourpicker")
 color <- "blue"
     
 # tip: pick a color using rstudio colour picker. 
