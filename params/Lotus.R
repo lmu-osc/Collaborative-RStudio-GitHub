@@ -10,7 +10,7 @@ sig2 <- 3.3
 species.name <- "marialotus_plants"
     
 # e.g. "red"    
-color <- "1874CD" 
+color <- "red" 
     
 # tip: pick a color using rstudio colour picker. 
 # Addins > Colour Picker (to install: install.packages("colourpicker"))
