@@ -7,10 +7,10 @@
 sig2 <- 2.3
     
 # e.g. "anas_krystallinus"    
-species.name <- shreya_xyz
+species.name <- "shreya_xyz"
     
 # e.g. "red"    
-color <- c("#CD5C5C", "#FFFFFF", "#FFFFFF")
+color <- c("#CD5C5C")
     
 # tip: pick a color using rstudio colour picker. 
 # Addins > Colour Picker (to install: install.packages("colourpicker"))
