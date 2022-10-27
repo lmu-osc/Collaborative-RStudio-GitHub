@@ -17,7 +17,7 @@
 
     ![](./assets/git-project.png)
 
-5. **RStudio**: paste the URL of **your** GitHub repository into 'Repository URL'. Click `Create Project`
+5. **RStudio**: paste the URL of **your** GitHub repository into 'Repository URL'. Do not locate this new Git repository in the folder created in the first tutorial (i.e. so that each folder has its own Git database). Click `Create Project`
 
     ![](./assets/paste-url.png)
 
