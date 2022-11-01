@@ -17,7 +17,7 @@ If the session is live:
    ![](./assets/plot.png)
    ![](./assets/skulls.png)
 
-If the session is asynchronous:  
+If the session is asynchronous:    
 
 You can see the full result of a previous session [here](https://rpubs.com/annakrystalli/278074).
 
