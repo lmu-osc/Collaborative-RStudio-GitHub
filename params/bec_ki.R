@@ -4,13 +4,13 @@
 # input parameters
 
 # sigma2: 0 < value < 5
-sig2 <- 
+sig2 <- 4.5
     
 # e.g. "anas_krystallinus"    
-species.name <- 
+species.name <- "bec_ki"
     
 # e.g. "red"    
-color <- 
+color <- "green"
     
 # tip: pick a color using rstudio colour picker. 
 # Addins > Colour Picker (to install: install.packages("colourpicker"))
