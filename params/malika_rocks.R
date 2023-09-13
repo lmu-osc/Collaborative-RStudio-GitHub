@@ -4,10 +4,10 @@
 # input parameters
 
 # sigma2: 0 < value < 5
-sig2 <- pi
+sig2 <- 4.2
 
 # e.g. "anas_krystallinus"
-species.name <- "ramiro_magnus"
+species.name <- "Malika_Rocks"
 
 # e.g. "orangeish"
 color <- "#ffb200"
