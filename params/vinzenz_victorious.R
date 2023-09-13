@@ -10,7 +10,7 @@ sig2 <- 4.7
 species.name <- "vincus_vincis"
     
 # e.g. "red"    
-color <- #D8B345"
+color <- "#D8B345"
     
 # tip: pick a color using rstudio colour picker. 
 # Addins > Colour Picker (to install: install.packages("colourpicker"))
