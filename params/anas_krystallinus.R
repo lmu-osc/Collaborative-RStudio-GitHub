@@ -10,6 +10,6 @@ sig2 <- 0.8
 species.name <- "anas_krystallinus"
 
 # e.g. "orange"
-color <- "orange"
+color <- "blue"
 
 # tip: pick a color at using rstudio colour picker. Addins > Colour Picker
