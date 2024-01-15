@@ -7,7 +7,7 @@
 sig2 <- 0.2
     
 # e.g. "anas_krystallinus"    
-species.name <- jude_judycus
+species.name <- "jude_judycus"
     
 # e.g. "red"    
 color <- "orange"
