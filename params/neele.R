@@ -7,7 +7,7 @@
 sig2 <- 2
     
 # e.g. "anas_krystallinus"    
-species.name <- neele
+species.name <- "neele"
     
 # e.g. "red"    
 color <- "blue"
