@@ -15,7 +15,7 @@ To integrate all the contributions made to the original repository into your loc
 
 3. **Shell**: type the command to pull the original repository and branch you wish to obtain locally which has the format: `git pull git@github.com:ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git` where you would replace original owner and repository to the appropropriate names. Here: 
    ```
-   git pull git@github.com:MalikaIhle/Collaborative-RStudio-GitHub.git
+   git pull git@github.com:lmu-osc/Collaborative-RStudio-GitHub.git
    ```
 
     ![](./assets/command-line.png)
