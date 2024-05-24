@@ -1,7 +1,8 @@
 ---
-output: 
-    html_document:
-        theme: cerulean
+output:
+  html_document:
+    theme: cerulean
+  pdf_document: default
 ---
 
 # **Evolutionary lottery of skull and beak morphology**
@@ -48,7 +49,7 @@ cols <- NULL # generate object to compile trendline colours
 We'll use the parameters supplied in your scripts to generate brownian trait evolution trendline for each species.
 
 ```{r}
-
+#getting the file names for everything except the template that has undefined values
 spp.files <- dir("params/")[dir("params/") != "params_tmpl.R"]
 
 for(spp in spp.files){
@@ -64,17 +65,23 @@ for(spp in spp.files){
 
 ```
 
+
 ### Plot trait evolution timeseries
 
 Use the data generated to plot all species.
 
 ```{r fig.width = 9}
 
+# Specify the order of species based on the order of colors in cols to stop a mismatch in colours
+dt$species <- factor(dt$species, levels = unique(dt$species))
+
+# Create the ggplot object
 p <- ggplot(data = dt, aes(x = t, y = trait, group = species, colour = species)) + 
   geom_line() + 
   scale_colour_manual(values = cols) 
-  
-  ggplotly(p)
+
+# Plot the results
+ggplotly(p)
 ```
 
 <br>
