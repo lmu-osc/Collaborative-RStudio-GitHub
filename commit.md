@@ -14,11 +14,11 @@ To avoid conflict during this collaborative coding exercice (i.e. contributors e
 
     The parameters each participants need to supply are:
 
-    - **`sig2`:** A numeric value greater than 0 but smaller than 5
+    - **`sig2`:** A numeric value greater than 0 but smaller than 5. A numerical value doesn't have quotaiton marks around it. 
 
-    - **`species.name`:** a character string e.g. `"anas_krystallinus"`. Try to create a species name out of your name!
+    - **`species.name`:** a character string e.g. `"anas_krystallinus"`. Try to create a species name out of your name! A string has quotation marks around it in R. 
 
-    - **`color`:** e.g. `"red"`, `"#FFFFFF"`
+    - **`color`:** e.g. `"red"`, `"#FFFFFF"`. This code or string should have quotation marks around it. 
 
     (optional) If you want, you can use the RStudio colour picker to select a color. If you don't have it installed, type `install.packages("colourpicker")` in your console. 
 
