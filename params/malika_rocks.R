@@ -10,7 +10,7 @@ sig2 <- 4.2
 species.name <- "Malika_Rocks"
 
 # e.g. "orangeish"
-color <- "#ffb200"
+color <- "#ffb201"
 
 # tip: pick a color using rstudio colour picker.
 # Addins > Colour Picker (to install: install.packages("colourpicker"))
