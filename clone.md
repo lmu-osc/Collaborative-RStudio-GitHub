@@ -1,7 +1,7 @@
 # Clone your GitHub repository
 
 ***
-1. **GitHub**: click on the green `Code` or `Clone` button, choose the **SSH** URL to secure your connection, and copy **your** repository's URL. 
+1. **GitHub**: click on the green `<> Code` button, choose the **SSH** URL to secure your connection, and copy **your** repository's URL. 
 
     ![](./assets/clone-button.png)
 
