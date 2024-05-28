@@ -2,7 +2,11 @@
 
 ***
 
-If the session is live:  
+**If the session is live**:  check to see your collaborator's response to your request. Most likely it will be a thumbs up and result in a merge! But your collaborator might also request a correction if they spot an error. 
+
+**If you are following this tutorial on your own**: you can see a recording of the merge on GitHub here: 
+
+
 
 1. **Collaborator's screen**: Once all parameters are collated, look out for the results on your collaborator/instructor's screen. After inspecting and accepting your pull requests (in the pull request tab in their GitHub repository), they will pull their GitHub repository into their local repository. 
 
