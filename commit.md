@@ -8,6 +8,9 @@ To avoid conflict during this collaborative coding exercice (i.e. contributors e
     ![](./assets/copy-params_tmpl.png)
     ![](./assets/rename-copy.png)
 
+<br />
+
+
 2. **RStudio**: edit your `.R` script
 
     ![](./assets/edit-file.png)
@@ -24,9 +27,15 @@ To avoid conflict during this collaborative coding exercice (i.e. contributors e
 
     <img src="assets/colour_picker.png" width="500px" />
 
+<br />
+
+
 3. **RStudio**: save your file and in the Git tab, tick the box next to *** **your new script ONLY** *** to stage your file and click 'commit'.
 
     ![](./assets/stage.png)
+
+<br />
+
 
 4. **RStudio**: supply a descriptive message of the commit and click `commit`
 
