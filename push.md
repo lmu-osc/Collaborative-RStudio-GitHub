@@ -8,7 +8,7 @@
 
     when successful you should get this pop up box which you can close:
 
-    ![](./assets/push-github.png)
+    <img src="assets/push-github.png" width="500">
 
 
 <br />
