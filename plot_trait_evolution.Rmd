@@ -111,3 +111,10 @@ if(length(gf) > 0){
   }
 }
 ```
+
+
+### Session Info
+
+```{r}
+sessioninfo::session_info()
+```
