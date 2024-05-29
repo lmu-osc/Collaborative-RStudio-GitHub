@@ -2,7 +2,7 @@
 
 ***
 
-**!!! If the session is live!!! **: go see your collaborator merge your pull request! Most likely it will be a thumbs up and result in a merge! But your collaborator might also request a correction if they spot an error. 
+**!!! If the session is live!!!**: go see your collaborator merge your pull request! Most likely it will be a thumbs up and result in a merge! But your collaborator might also request a correction if they spot an error. 
 
 
 <br />
