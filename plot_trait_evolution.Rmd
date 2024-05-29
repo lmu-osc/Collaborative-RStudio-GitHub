@@ -33,8 +33,8 @@ First we load the required packages and create some objects to compile data on t
 
 ```{r warning=F, message=FALSE}
 require(dplyr)
-require(ggplot2)
-require(plotly)
+require(ggplot2) #3.5.1
+require(plotly) #4.10.4
 set.seed(1)
 
 t <- 0:100  # generate time vector
