@@ -31,7 +31,6 @@ jobs:
         with:
           cache-version: 1
           packages: |
-            deps::.
             any::rmarkdown
             any::dplyr
             any::ggplot2
