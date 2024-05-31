@@ -14,14 +14,6 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
-      - name: Cache R packages
-        uses: actions/cache@v3
-        id: cache
-        with:
-          path: ${{ github.workspace }}
-          key: ${{ runner.os }}-${{ hashFiles('.github/R-version') }}-1-${{ hashFiles('.github/depends.Rds') }}
-          restore-keys: ${{ runner.os }}-${{ hashFiles('.github/R-version') }}-1-
-
       - name: Install libcurl
         run: |
           sudo apt-get install libcurl4-openssl-dev
@@ -35,7 +27,6 @@ jobs:
           r-version: '4.4.0'
 
       - name: Install R Packages
-        # if: steps.cache.outputs.cache-hit != 'true'
         run: |
           installed.packages()
           dependencies <- c("rmarkdown", "dplyr", "ggplot2", "plotly", "sessioninfo")
