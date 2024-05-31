@@ -29,4 +29,3 @@ You are done!
 
 ***
 
-[Previous](./merge.md) | [Home](./README.md)

@@ -44,4 +44,3 @@ To avoid conflict during this collaborative coding exercice (i.e. contributors e
 
 ***
 
-[Previous](./clone.md) | [Next](./push.md)

@@ -18,4 +18,3 @@
 
 ***
 
-[Previous](./commit.md) | [Next](./pull-request.md)

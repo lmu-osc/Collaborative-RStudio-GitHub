@@ -26,4 +26,3 @@
   
 ***
 
-[Previous](./README.md) | [Next](./clone.md)
