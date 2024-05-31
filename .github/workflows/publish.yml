@@ -33,8 +33,8 @@ jobs:
           packages: |
             any::rmarkdown
             any::dplyr
-            ggplot2@v3.5.1
-            plotly@v4.10.4
+            ggplot2@3.5.1
+            plotly@4.10.4
             any::sessioninfo
 
       - name: Render and Publish
