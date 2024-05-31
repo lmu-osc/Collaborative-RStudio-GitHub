@@ -22,6 +22,10 @@ jobs:
           key: ${{ runner.os }}-${{ hashFiles('.github/R-version') }}-1-${{ hashFiles('.github/depends.Rds') }}
           restore-keys: ${{ runner.os }}-${{ hashFiles('.github/R-version') }}-1-
 
+      - name: Install libcurl
+        run: |
+          sudo apt-get install libcurl4-openssl-dev
+
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
