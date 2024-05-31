@@ -24,7 +24,19 @@ website:
       - section: "Tutorial"
         contents:
           - href: fork.md
-            text: "Fork a GitHub Repo"
+            text: "Fork a Repo"
+          - href: clone.md
+            text: "Clone a Repo"
+          - href: commit.md
+            text: "Commit to a Project"
+          - href: push.md
+            text: "Push Changes"
+          - href: pull-request.md
+            text: "Pull Request"
+          - href: merge.md
+            text: "Merge Changes"
+          - href: pull-upstream.md
+            text: "Pull Upstream"
 
 format:
   html:
