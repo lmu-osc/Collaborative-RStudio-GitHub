@@ -22,6 +22,12 @@ jobs:
         with:
           r-version: '4.4.0'
 
+      - name: Install RMarkdown
+        run: |
+          install.packages("rmarkdown")
+          library("rmarkdown")
+        shell: Rscript {0}
+
       - name: Render and Publish
         uses: quarto-dev/quarto-actions/publish@v2
         with:
