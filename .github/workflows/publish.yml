@@ -35,10 +35,10 @@ jobs:
         with:
           r-version: '4.4.0'
 
-      - name: Install RMarkdown
+      - name: Install R Packages
         if: steps.cache.outputs.cache-hit != 'true'
         run: |
-          install.packages(c("rmarkdown", "dplyr", "ggplot2", "plotly"))
+          install.packages(c("rmarkdown", "dplyr", "ggplot2", "plotly", "sessioninfo"))
           library("rmarkdown")
         shell: Rscript {0}
 
