@@ -1,0 +1,140 @@
+[
+  {
+    "objectID": "pull-upstream.html",
+    "href": "pull-upstream.html",
+    "title": "Pull upstream repository into your fork",
+    "section": "",
+    "text": "Pull upstream repository into your fork\n\nTo integrate all the contributions made to the original repository into your local repository, you may think that you could first integrate the changes from the original repository into your fork (your GitHub version) and then pull your fork (to update your local copy), but this is not possible. You will need to shortcircuit this by pulling the original repository into your local repository directly (and then push the local new changes to your remote version on GitHub). This means that this operation needs to happen locally, in RStudio. Because you will not be pulling from your fork (your remote GitHub) but from the original repository, and that this isn’t a daily operation, you do not have a shortcut for this in RStudio. This operation needs to be instructed in the command line, in the Terminal tab of RStudio.\n\nRStudio: go to the Terminal tab of Rstudio\nTerminal: first make sure you are on the branch you wish to receive the modifications (today we didn’t create branches other than the default one called ‘main’) by typing:\ngit checkout main\nTerminal: type the command to pull the original repository and branch you wish to obtain locally which has the format: git pull git@github.com:ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git where you would replace original owner and repository to the appropriate names. Here:\ngit pull git@github.com:lmu-osc/Collaborative-RStudio-GitHub.git\n\nRStudio: check in the Files tab that the new contributions appeared.\nRStudio: push those local changes to your GitHub repository (you can do this from the command line by typing git push)\n\n\nYou are done!",
+    "crumbs": [
+      "Home",
+      "Tutorial",
+      "Pull Upstream"
+    ]
+  },
+  {
+    "objectID": "commit.html",
+    "href": "commit.html",
+    "title": "Commit changes locally",
+    "section": "",
+    "text": "Commit changes locally\n\nTo avoid conflict during this collaborative coding exercice (i.e. contributors editing the same line of code at the same time), today, we will work on different files altogether. To avoid conflict in future projects, no tool will be able to replace good communication. However, GitHub offers tools to help that communication, called GitHub issues. And if need be, you could still resolve conflicts using the command line. Today, to avoid conflict, you will copy a template file and edit your own copy.\n\nRStudio: select params/params_tmpl.R and click on ‘More’, ‘Copy’, and give it the name of your imaginary species or your name. Please to not overwrite or edit the file params/params_tmpl.R.\n \n\n\n\nRStudio: edit your .R script\n\nThe parameters each participants need to supply are:\n\nsig2: A numeric value greater than 0 but smaller than 5. A numerical value doesn’t have quotaiton marks around it.\nspecies.name: a character string e.g. \"anas_krystallinus\". Try to create a species name out of your name! A string has quotation marks around it in R.\ncolor: e.g. \"red\", \"#FFFFFF\". This code or string should have quotation marks around it.\n\n(optional) If you want, you can use the RStudio colour picker to select a color. If you don’t have it installed, type install.packages(\"colourpicker\") in your console.\n\n\n\n\nRStudio: save your file and in the Git tab, tick the box next to *** your new script ONLY *** to stage your file and click ‘commit’.\n\n\n\n\nRStudio: supply a descriptive message of the commit and click commit",
+    "crumbs": [
+      "Home",
+      "Tutorial",
+      "Commit to a Project"
+    ]
+  },
+  {
+    "objectID": "merge.html",
+    "href": "merge.html",
+    "title": "Observe the merged contributions",
+    "section": "",
+    "text": "Observe the merged contributions\n\n!!! If the session is live!!!: go see your collaborator merge your pull request! Most likely it will be a thumbs up and result in a merge! But your collaborator might also request a correction if they spot an error.\n\nIf you are following this tutorial on your own asynchronously: These are the steps of the merge:\n\n\nCollaborator’s screen - GitHub: In their pull request tab, they will inspect the files you changed and ensure that the parameters were inputted correctly so as to not break down their code down the line.\n\n\n\n\nCollaborator’s screen - GitHub: They will navigate back to the conversation tab of your pull request to write some comments, merge your pull request, and confirm the merge.\n\n\n\n\nCollaborator’s screen - RStudio: They will pull their GitHub repository into their local repository.\n\n\n\n\nCollaborator’s screen - RStudio: They will knit the Rmarkdown file plot-trait-evolution.Rmd which sources all the contributed files. Knitting a Rmarkdown file means rendering the Rmarkdown code (that integrate R code and Markdown code) into a defined format, here a html file. This file generates plots and figures based on the parameters that were contributed.\n\n\n\n\nCollaborator’s screen - RStudio: If all packages needed to run this script and to knit the file into a html page are installed, this file will generate plots and figures based on the parameters that were contributed.\n \n\n\nThis is how one can integrate data and code to a common repository shared amongst collaborators!",
+    "crumbs": [
+      "Home",
+      "Tutorial",
+      "Merge Changes"
+    ]
+  },
+  {
+    "objectID": "plot_trait_evolution.html",
+    "href": "plot_trait_evolution.html",
+    "title": "Evolutionary lottery of skull and beak morphology",
+    "section": "",
+    "text": "Beak and skull shapes in birds of prey (“raptors”) are strongly coupled and largely controlled by size.\n\ngif provided by the awesome Jen Bright @MorphobeakGeek!\n\nIn this exercise we will use a github repo to collaboratively collate and simulate evolutionary trajectories for each participants’ species body size using a simple brownian motion evolutionary model. This assumes evolutionary steps to progress comletely at random. You could say:\n\n\n\nEach participant has created and contributed a file specifying the parameters required to simulate and plot their species evolutionary trajectory. We’ve collect all participants’ files in the master repo. Next we need to simulate species trajectories plot them up.\nParticipants will then get to see the skull and beak shape corresponding to their species relative body size!\n\n\n\n\nFirst we load the required packages and create some objects to compile data on trait evolution for each species.\n\nrequire(dplyr)\nrequire(ggplot2) #3.5.1\nrequire(plotly) #4.10.4\nset.seed(1)\n\nt &lt;- 0:100  # generate time vector\ndt &lt;- NULL # generate object to compile time-series data\ncols &lt;- NULL # generate object to compile trendline colours\n\n\n\n\n\nWe’ll use the parameters supplied in your scripts to generate brownian trait evolution trendline for each species.\n\n#getting the file names for everything except the template that has undefined values\nspp.files &lt;- dir(\"params/\")[dir(\"params/\") != \"params_tmpl.R\"]\n\nfor(spp in spp.files){\n  # source parameters for each species\n  source(file.path(\"params\", spp))\n  \n  # generate trait evolution time-series and compile plotting data\n  dt &lt;-  rbind(dt, data.frame(t, \n                              trait = c(0, rnorm(n = length(t) - 1, sd = sqrt(sig2)) %&gt;% cumsum()),\n                              species = species.name))\n  cols &lt;- c(cols, color)\n}\n\n\n\n\nUse the data generated to plot all species.\n\n# Specify the order of species based on the order of colors in cols to stop a mismatch in colours\ndt$species &lt;- factor(dt$species, levels = unique(dt$species))\n\n# Create the ggplot object\np &lt;- ggplot(data = dt, aes(x = t, y = trait, group = species, colour = species)) + \n  geom_line() + \n  scale_colour_manual(values = cols) \n\n# Plot the results\nggplotly(p)\n\n\n\n\n\n\n\n\n\n\n\nSkulls are organised from largest to smallest. The largest skulls are vulture-like, (e.g. no. 50, the Andean condor Vultur gryphus) and the smallest are falconet-like, (e.g. no. 1 Collared falconet Microhierax caerulescens)\n\n\n\n\n\n\n\n\n\n\n\nsessioninfo::session_info()\n\n─ Session info ───────────────────────────────────────────────────────────────\n setting  value\n version  R version 4.4.0 (2024-04-24)\n os       macOS Sonoma 14.5\n system   aarch64, darwin20\n ui       X11\n language (EN)\n collate  en_US.UTF-8\n ctype    en_US.UTF-8\n tz       Europe/Berlin\n date     2024-05-31\n pandoc   3.1.13 @ /opt/homebrew/bin/ (via rmarkdown)\n\n─ Packages ───────────────────────────────────────────────────────────────────\n package     * version date (UTC) lib source\n cachem        1.0.8   2023-05-01 [1] CRAN (R 4.4.0)\n cli           3.6.2   2023-12-11 [1] CRAN (R 4.4.0)\n colorspace    2.1-0   2023-01-23 [1] CRAN (R 4.4.0)\n crosstalk     1.2.1   2023-11-23 [1] CRAN (R 4.4.0)\n data.table    1.15.4  2024-03-30 [1] CRAN (R 4.4.0)\n devtools    * 2.4.5   2022-10-11 [1] CRAN (R 4.4.0)\n digest        0.6.35  2024-03-11 [1] CRAN (R 4.4.0)\n dplyr       * 1.1.4   2023-11-17 [1] CRAN (R 4.4.0)\n ellipsis      0.3.2   2021-04-29 [1] CRAN (R 4.4.0)\n evaluate      0.23    2023-11-01 [1] CRAN (R 4.4.0)\n fansi         1.0.6   2023-12-08 [1] CRAN (R 4.4.0)\n fastmap       1.1.1   2023-02-24 [1] CRAN (R 4.4.0)\n forcats     * 1.0.0   2023-01-29 [1] CRAN (R 4.4.0)\n fs            1.6.4   2024-04-25 [1] CRAN (R 4.4.0)\n generics      0.1.3   2022-07-05 [1] CRAN (R 4.4.0)\n ggplot2     * 3.5.1   2024-04-23 [1] CRAN (R 4.4.0)\n glue          1.7.0   2024-01-09 [1] CRAN (R 4.4.0)\n gtable        0.3.5   2024-04-22 [1] CRAN (R 4.4.0)\n hms           1.1.3   2023-03-21 [1] CRAN (R 4.4.0)\n htmltools     0.5.8.1 2024-04-04 [1] CRAN (R 4.4.0)\n htmlwidgets   1.6.4   2023-12-06 [1] CRAN (R 4.4.0)\n httpuv        1.6.15  2024-03-26 [1] CRAN (R 4.4.0)\n httr          1.4.7   2023-08-15 [1] CRAN (R 4.4.0)\n jsonlite      1.8.8   2023-12-04 [1] CRAN (R 4.4.0)\n knitr         1.46    2024-04-06 [1] CRAN (R 4.4.0)\n labeling      0.4.3   2023-08-29 [1] CRAN (R 4.4.0)\n later         1.3.2   2023-12-06 [1] CRAN (R 4.4.0)\n lazyeval      0.2.2   2019-03-15 [1] CRAN (R 4.4.0)\n lifecycle     1.0.4   2023-11-07 [1] CRAN (R 4.4.0)\n lubridate   * 1.9.3   2023-09-27 [1] CRAN (R 4.4.0)\n magrittr      2.0.3   2022-03-30 [1] CRAN (R 4.4.0)\n memoise       2.0.1   2021-11-26 [1] CRAN (R 4.4.0)\n mime          0.12    2021-09-28 [1] CRAN (R 4.4.0)\n miniUI        0.1.1.1 2018-05-18 [1] CRAN (R 4.4.0)\n munsell       0.5.1   2024-04-01 [1] CRAN (R 4.4.0)\n pillar        1.9.0   2023-03-22 [1] CRAN (R 4.4.0)\n pkgbuild      1.4.4   2024-03-17 [1] CRAN (R 4.4.0)\n pkgconfig     2.0.3   2019-09-22 [1] CRAN (R 4.4.0)\n pkgload       1.3.4   2024-01-16 [1] CRAN (R 4.4.0)\n plotly      * 4.10.4  2024-01-13 [1] CRAN (R 4.4.0)\n profvis       0.3.8   2023-05-02 [1] CRAN (R 4.4.0)\n promises      1.3.0   2024-04-05 [1] CRAN (R 4.4.0)\n purrr       * 1.0.2   2023-08-10 [1] CRAN (R 4.4.0)\n R6            2.5.1   2021-08-19 [1] CRAN (R 4.4.0)\n Rcpp          1.0.12  2024-01-09 [1] CRAN (R 4.4.0)\n readr       * 2.1.5   2024-01-10 [1] CRAN (R 4.4.0)\n remotes       2.5.0   2024-03-17 [1] CRAN (R 4.4.0)\n rlang         1.1.3   2024-01-10 [1] CRAN (R 4.4.0)\n rmarkdown     2.26    2024-03-05 [1] CRAN (R 4.4.0)\n rstudioapi    0.16.0  2024-03-24 [1] CRAN (R 4.4.0)\n scales        1.3.0   2023-11-28 [1] CRAN (R 4.4.0)\n sessioninfo   1.2.2   2021-12-06 [1] CRAN (R 4.4.0)\n shiny         1.8.1.1 2024-04-02 [1] CRAN (R 4.4.0)\n stringi       1.8.4   2024-05-06 [1] CRAN (R 4.4.0)\n stringr     * 1.5.1   2023-11-14 [1] CRAN (R 4.4.0)\n tibble      * 3.2.1   2023-03-20 [1] CRAN (R 4.4.0)\n tidyr       * 1.3.1   2024-01-24 [1] CRAN (R 4.4.0)\n tidyselect    1.2.1   2024-03-11 [1] CRAN (R 4.4.0)\n tidyverse   * 2.0.0   2023-02-22 [1] CRAN (R 4.4.0)\n timechange    0.3.0   2024-01-18 [1] CRAN (R 4.4.0)\n tzdb          0.4.0   2023-05-12 [1] CRAN (R 4.4.0)\n urlchecker    1.0.1   2021-11-30 [1] CRAN (R 4.4.0)\n usethis     * 2.2.3   2024-02-19 [1] CRAN (R 4.4.0)\n utf8          1.2.4   2023-10-22 [1] CRAN (R 4.4.0)\n vctrs         0.6.5   2023-12-01 [1] CRAN (R 4.4.0)\n viridisLite   0.4.2   2023-05-02 [1] CRAN (R 4.4.0)\n withr         3.0.0   2024-01-16 [1] CRAN (R 4.4.0)\n xfun          0.43    2024-03-25 [1] CRAN (R 4.4.0)\n xtable        1.8-4   2019-04-21 [1] CRAN (R 4.4.0)\n yaml          2.3.8   2023-12-11 [1] CRAN (R 4.4.0)\n\n [1] /Library/Frameworks/R.framework/Versions/4.4-arm64/Resources/library\n\n──────────────────────────────────────────────────────────────────────────────"
+  },
+  {
+    "objectID": "plot_trait_evolution.html#skulls-find-the-skull-associated-with-your-species",
+    "href": "plot_trait_evolution.html#skulls-find-the-skull-associated-with-your-species",
+    "title": "Evolutionary lottery of skull and beak morphology",
+    "section": "",
+    "text": "Skulls are organised from largest to smallest. The largest skulls are vulture-like, (e.g. no. 50, the Andean condor Vultur gryphus) and the smallest are falconet-like, (e.g. no. 1 Collared falconet Microhierax caerulescens)\n\n\n\n\n\n\n\n\n\n\n\nsessioninfo::session_info()\n\n─ Session info ───────────────────────────────────────────────────────────────\n setting  value\n version  R version 4.4.0 (2024-04-24)\n os       macOS Sonoma 14.5\n system   aarch64, darwin20\n ui       X11\n language (EN)\n collate  en_US.UTF-8\n ctype    en_US.UTF-8\n tz       Europe/Berlin\n date     2024-05-31\n pandoc   3.1.13 @ /opt/homebrew/bin/ (via rmarkdown)\n\n─ Packages ───────────────────────────────────────────────────────────────────\n package     * version date (UTC) lib source\n cachem        1.0.8   2023-05-01 [1] CRAN (R 4.4.0)\n cli           3.6.2   2023-12-11 [1] CRAN (R 4.4.0)\n colorspace    2.1-0   2023-01-23 [1] CRAN (R 4.4.0)\n crosstalk     1.2.1   2023-11-23 [1] CRAN (R 4.4.0)\n data.table    1.15.4  2024-03-30 [1] CRAN (R 4.4.0)\n devtools    * 2.4.5   2022-10-11 [1] CRAN (R 4.4.0)\n digest        0.6.35  2024-03-11 [1] CRAN (R 4.4.0)\n dplyr       * 1.1.4   2023-11-17 [1] CRAN (R 4.4.0)\n ellipsis      0.3.2   2021-04-29 [1] CRAN (R 4.4.0)\n evaluate      0.23    2023-11-01 [1] CRAN (R 4.4.0)\n fansi         1.0.6   2023-12-08 [1] CRAN (R 4.4.0)\n fastmap       1.1.1   2023-02-24 [1] CRAN (R 4.4.0)\n forcats     * 1.0.0   2023-01-29 [1] CRAN (R 4.4.0)\n fs            1.6.4   2024-04-25 [1] CRAN (R 4.4.0)\n generics      0.1.3   2022-07-05 [1] CRAN (R 4.4.0)\n ggplot2     * 3.5.1   2024-04-23 [1] CRAN (R 4.4.0)\n glue          1.7.0   2024-01-09 [1] CRAN (R 4.4.0)\n gtable        0.3.5   2024-04-22 [1] CRAN (R 4.4.0)\n hms           1.1.3   2023-03-21 [1] CRAN (R 4.4.0)\n htmltools     0.5.8.1 2024-04-04 [1] CRAN (R 4.4.0)\n htmlwidgets   1.6.4   2023-12-06 [1] CRAN (R 4.4.0)\n httpuv        1.6.15  2024-03-26 [1] CRAN (R 4.4.0)\n httr          1.4.7   2023-08-15 [1] CRAN (R 4.4.0)\n jsonlite      1.8.8   2023-12-04 [1] CRAN (R 4.4.0)\n knitr         1.46    2024-04-06 [1] CRAN (R 4.4.0)\n labeling      0.4.3   2023-08-29 [1] CRAN (R 4.4.0)\n later         1.3.2   2023-12-06 [1] CRAN (R 4.4.0)\n lazyeval      0.2.2   2019-03-15 [1] CRAN (R 4.4.0)\n lifecycle     1.0.4   2023-11-07 [1] CRAN (R 4.4.0)\n lubridate   * 1.9.3   2023-09-27 [1] CRAN (R 4.4.0)\n magrittr      2.0.3   2022-03-30 [1] CRAN (R 4.4.0)\n memoise       2.0.1   2021-11-26 [1] CRAN (R 4.4.0)\n mime          0.12    2021-09-28 [1] CRAN (R 4.4.0)\n miniUI        0.1.1.1 2018-05-18 [1] CRAN (R 4.4.0)\n munsell       0.5.1   2024-04-01 [1] CRAN (R 4.4.0)\n pillar        1.9.0   2023-03-22 [1] CRAN (R 4.4.0)\n pkgbuild      1.4.4   2024-03-17 [1] CRAN (R 4.4.0)\n pkgconfig     2.0.3   2019-09-22 [1] CRAN (R 4.4.0)\n pkgload       1.3.4   2024-01-16 [1] CRAN (R 4.4.0)\n plotly      * 4.10.4  2024-01-13 [1] CRAN (R 4.4.0)\n profvis       0.3.8   2023-05-02 [1] CRAN (R 4.4.0)\n promises      1.3.0   2024-04-05 [1] CRAN (R 4.4.0)\n purrr       * 1.0.2   2023-08-10 [1] CRAN (R 4.4.0)\n R6            2.5.1   2021-08-19 [1] CRAN (R 4.4.0)\n Rcpp          1.0.12  2024-01-09 [1] CRAN (R 4.4.0)\n readr       * 2.1.5   2024-01-10 [1] CRAN (R 4.4.0)\n remotes       2.5.0   2024-03-17 [1] CRAN (R 4.4.0)\n rlang         1.1.3   2024-01-10 [1] CRAN (R 4.4.0)\n rmarkdown     2.26    2024-03-05 [1] CRAN (R 4.4.0)\n rstudioapi    0.16.0  2024-03-24 [1] CRAN (R 4.4.0)\n scales        1.3.0   2023-11-28 [1] CRAN (R 4.4.0)\n sessioninfo   1.2.2   2021-12-06 [1] CRAN (R 4.4.0)\n shiny         1.8.1.1 2024-04-02 [1] CRAN (R 4.4.0)\n stringi       1.8.4   2024-05-06 [1] CRAN (R 4.4.0)\n stringr     * 1.5.1   2023-11-14 [1] CRAN (R 4.4.0)\n tibble      * 3.2.1   2023-03-20 [1] CRAN (R 4.4.0)\n tidyr       * 1.3.1   2024-01-24 [1] CRAN (R 4.4.0)\n tidyselect    1.2.1   2024-03-11 [1] CRAN (R 4.4.0)\n tidyverse   * 2.0.0   2023-02-22 [1] CRAN (R 4.4.0)\n timechange    0.3.0   2024-01-18 [1] CRAN (R 4.4.0)\n tzdb          0.4.0   2023-05-12 [1] CRAN (R 4.4.0)\n urlchecker    1.0.1   2021-11-30 [1] CRAN (R 4.4.0)\n usethis     * 2.2.3   2024-02-19 [1] CRAN (R 4.4.0)\n utf8          1.2.4   2023-10-22 [1] CRAN (R 4.4.0)\n vctrs         0.6.5   2023-12-01 [1] CRAN (R 4.4.0)\n viridisLite   0.4.2   2023-05-02 [1] CRAN (R 4.4.0)\n withr         3.0.0   2024-01-16 [1] CRAN (R 4.4.0)\n xfun          0.43    2024-03-25 [1] CRAN (R 4.4.0)\n xtable        1.8-4   2019-04-21 [1] CRAN (R 4.4.0)\n yaml          2.3.8   2023-12-11 [1] CRAN (R 4.4.0)\n\n [1] /Library/Frameworks/R.framework/Versions/4.4-arm64/Resources/library\n\n──────────────────────────────────────────────────────────────────────────────"
+  },
+  {
+    "objectID": "push.html",
+    "href": "push.html",
+    "title": "Push your local changes to your remote repository",
+    "section": "",
+    "text": "Push your local changes to your remote repository\n\n\nRStudio: push your changes to GitHub by clicking, in the Git tab, the green arrow pointing up and entering your password.\n\nwhen successful you should get this pop up box which you can close:\n\n\n\n\nGitHub: verify that your changes were integrated in your GitHub repository by refreshing your GitHub repository webpage na dlooking into the params folder to see if your file is there.",
+    "crumbs": [
+      "Home",
+      "Tutorial",
+      "Push Changes"
+    ]
+  },
+  {
+    "objectID": "clone.html",
+    "href": "clone.html",
+    "title": "Clone your GitHub repository",
+    "section": "",
+    "text": "Clone your GitHub repository\n\n\nGitHub: click on the green &lt;&gt; Code button, choose the SSH URL to secure your connection, and copy your repository’s URL.\n\n\n\n\nRStudio: create a new project\n\n\n\n\nRStudio: select Checkout a project from a version control repository\n\n\n\n\nRStudio: select Clone a project from a Git repository\n\n\n\n\nRStudio: paste the URL of your GitHub repository into ‘Repository URL’. Do not locate this new Git repository in the folder created in the first tutorial (i.e. so that each folder has its own Git database). Click Create Project. Your password will be requested.\n\n\n\n\nRStudio: Click on the Files tab to check that it contains all the files from the GitHub repository",
+    "crumbs": [
+      "Home",
+      "Tutorial",
+      "Clone a Repo"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Collaborative coding with GitHub and RStudio",
+    "section": "",
+    "text": "This work was originally created by Anna Krystalli from RSE-Sheffield under a MIT licence (original repository). It was subsequently adapted by Malika Ihle from Reproducible Research Oxford, with the contributions of Adam Kenny. It is now maintained by Malika Ihle at the LMU Open Science Center. The overview image is from Dumitru Uzun. The exercice is based on the research of Jen Bright who also kindly provided the gifs used in the exercice. You are free to use, copy, modify, distribute this work for your own projects.\nThis session follows-up from the Introduction to RStudio, Git, and GitHub and is accompanied by this 10 min introductory videorecording.\n\n\n\n\nIn this session, you will\n\nfork a GitHub repository (i.e. copy a collaborator’s repository to your own GitHub account)\n\nclone it locally (i.e. copy it to your computer while maintaining a connection to your remote (GitHub) version)\n\ncreate a new file locally and commit it to your local repository (i.e. save the file locally in your version control system)\n\npush your changes to your GitHub version (i.e. synchronise your local changes with your remote repository)\n\ncontribute a file to the original repository by making a pull request (i.e. request your collaborator, the owner of the original repository, to fetch your proposed changes and merge them into the original repository)\n\nobserve the outcome of all contributions merged by your collaborator\n\npull the upstream repository into your fork (i.e. update your fork to reflect all the changes that happened in your collaborator’s original repository)\n\n\n\nIn this example, the file you will contribute is required to simulate the evolutionary trajectory of an imaginary bird species’ body size. We will use RStudio and GitHub to collate all species files and plot them all up together at the end. We will also discover the skull and beak shapes associated with each species you contributed (after they ‘evolved’ through a simple brownian motion model which assumes steps to progress completely at random).\n\n\n\n\n\nThe material is self-paced and it is necessary that you work through the sections in order.\n\nFork - Copy your collaborator’s repository\nClone - Copy your repository locally\nCommit - Make changes and save them locally\nPush - Update your remote repository with your local changes\nPull request - Ask your collaborator to integrate your changes in their repository\nMerged results - Observe the merge of all contributions\nPull the upstream repository into your fork - Update your fork with all contributions made to the original repository",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#about-this-work",
+    "href": "index.html#about-this-work",
+    "title": "Collaborative coding with GitHub and RStudio",
+    "section": "",
+    "text": "This work was originally created by Anna Krystalli from RSE-Sheffield under a MIT licence (original repository). It was subsequently adapted by Malika Ihle from Reproducible Research Oxford, with the contributions of Adam Kenny. It is now maintained by Malika Ihle at the LMU Open Science Center. The overview image is from Dumitru Uzun. The exercice is based on the research of Jen Bright who also kindly provided the gifs used in the exercice. You are free to use, copy, modify, distribute this work for your own projects.\nThis session follows-up from the Introduction to RStudio, Git, and GitHub and is accompanied by this 10 min introductory videorecording.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#overview-of-the-exercice",
+    "href": "index.html#overview-of-the-exercice",
+    "title": "Collaborative coding with GitHub and RStudio",
+    "section": "",
+    "text": "In this session, you will\n\nfork a GitHub repository (i.e. copy a collaborator’s repository to your own GitHub account)\n\nclone it locally (i.e. copy it to your computer while maintaining a connection to your remote (GitHub) version)\n\ncreate a new file locally and commit it to your local repository (i.e. save the file locally in your version control system)\n\npush your changes to your GitHub version (i.e. synchronise your local changes with your remote repository)\n\ncontribute a file to the original repository by making a pull request (i.e. request your collaborator, the owner of the original repository, to fetch your proposed changes and merge them into the original repository)\n\nobserve the outcome of all contributions merged by your collaborator\n\npull the upstream repository into your fork (i.e. update your fork to reflect all the changes that happened in your collaborator’s original repository)\n\n\n\nIn this example, the file you will contribute is required to simulate the evolutionary trajectory of an imaginary bird species’ body size. We will use RStudio and GitHub to collate all species files and plot them all up together at the end. We will also discover the skull and beak shapes associated with each species you contributed (after they ‘evolved’ through a simple brownian motion model which assumes steps to progress completely at random).",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#step-by-step-tutorial",
+    "href": "index.html#step-by-step-tutorial",
+    "title": "Collaborative coding with GitHub and RStudio",
+    "section": "",
+    "text": "The material is self-paced and it is necessary that you work through the sections in order.\n\nFork - Copy your collaborator’s repository\nClone - Copy your repository locally\nCommit - Make changes and save them locally\nPush - Update your remote repository with your local changes\nPull request - Ask your collaborator to integrate your changes in their repository\nMerged results - Observe the merge of all contributions\nPull the upstream repository into your fork - Update your fork with all contributions made to the original repository",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "pull-request.html",
+    "href": "pull-request.html",
+    "title": "Create a pull request to ask your collaborator to merge your fork to the original repository",
+    "section": "",
+    "text": "Create a pull request to ask your collaborator to merge your fork to the original repository\n\n\nGitHub: in your repository, click on ‘contribute’ and ‘open pull request’\n\n\n\n\nGitHub: make sure the base repository is the LMU Open Science Center’s original one and the head fork is yours, both set on their main branch (these repositories should only have one branch anyway called ‘main’. Branches are diverging versions of a file within a repository - we will not cover this concept today). Check that your requested merge does not create any conflict. In addition, write an informative message, explaining your changes to your collaborator, the author of the original repository. Click on Create pull request\n\n\n\n\nGitHub: you can now see a conversation tab around your pull request in the repository of the original owner:",
+    "crumbs": [
+      "Home",
+      "Tutorial",
+      "Pull Request"
+    ]
+  },
+  {
+    "objectID": "fork.html",
+    "href": "fork.html",
+    "title": "Fork a GitHub repository",
+    "section": "",
+    "text": "Fork a GitHub repository\n\n\nGitHub: go to https://github.com/lmu-osc/Collaborative-RStudio-GitHub.\n\n\n\nGitHub: click on Fork. GitHub is creating your own copy of the repository in your GitHub account. Forks are linked and traceable.\n\n\n\n\nGitHub: click on the green button ‘create fork’ with the default settings.\n\n\n\n\nGitHub: you should now have a fork of this repository in your own GitHub account.",
+    "crumbs": [
+      "Home",
+      "Tutorial",
+      "Fork a Repo"
+    ]
+  }
+]
