@@ -1,0 +1,36 @@
+project:
+  type: website
+
+
+
+website:
+  title: "Collaborative Coding with GitHub and RStudio"
+  page-footer:
+    center: "Copyright, 2024 Open Science Center at LMU Munich"
+    border: false
+  search:
+    location: sidebar
+  page-navigation: true
+  navbar:
+    left:
+      - href: README.md
+        text: Home
+
+  sidebar:
+    style: docked
+    contents:
+      - text: "Home"
+        href: index.md
+      - section: "Tutorial"
+        contents:
+          - href: fork.md
+            text: "Fork a GitHub Repo"
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+
+
