@@ -14,14 +14,6 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
-      - name: Cache R packages
-        uses: actions/cache@v3
-        id: cache
-        with:
-          path: ${{ env.R_LIBS_USER }}
-          key: ${{ runner.os }}-${{ hashFiles('.github/R-version') }}-1-${{ hashFiles('.github/depends.Rds') }}
-          restore-keys: ${{ runner.os }}-${{ hashFiles('.github/R-version') }}-1-
-
       - name: Install libcurl
         run: |
           sudo apt-get install libcurl4-openssl-dev
@@ -35,14 +27,15 @@ jobs:
           r-version: '4.4.0'
 
       - name: Install R Packages
-        # if: steps.cache.outputs.cache-hit != 'true'
-        run: |
-          installed.packages()
-          dependencies <- c("rmarkdown", "dplyr", "ggplot2", "plotly", "sessioninfo")
-          needs_installation <- dependencies[!dependencies %in% installed.packages()]
-          install.packages(needs_installation)
-          library("rmarkdown")
-        shell: Rscript {0}
+        uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          cache-version: 1
+          extra-packages: |
+            any::rmarkdown
+            any::dplyr
+            any::ggplot2
+            any::plotly
+            any::sessioninfo
 
       - name: Render and Publish
         uses: quarto-dev/quarto-actions/publish@v2
