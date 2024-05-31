@@ -53,4 +53,3 @@ This is how one can integrate data and code to a common repository shared amongs
 
 ***
 
-[Previous](./pull-request.md) | [Next](./pull-upstream.md)

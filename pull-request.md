@@ -23,4 +23,3 @@
 
 ***
 
-[Previous](./push.md) | [Next](./merge.md)

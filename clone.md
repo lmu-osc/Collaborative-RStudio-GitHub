@@ -42,4 +42,3 @@
 
 ***
 
-[Previous](./fork.md) | [Next](./commit.md)
