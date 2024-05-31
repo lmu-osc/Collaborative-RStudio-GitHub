@@ -24,7 +24,7 @@ jobs:
 
       - name: Install RMarkdown
         run: |
-          install.packages("rmarkdown")
+          install.packages(c("rmarkdown", "dplyr", "ggplot2", "plotly"))
           library("rmarkdown")
         shell: Rscript {0}
 
