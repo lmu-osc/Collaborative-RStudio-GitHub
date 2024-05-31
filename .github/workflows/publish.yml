@@ -27,13 +27,15 @@ jobs:
           r-version: '4.4.0'
 
       - name: Install R Packages
-        run: |
-          installed.packages()
-          dependencies <- c("rmarkdown", "dplyr", "ggplot2", "plotly", "sessioninfo")
-          needs_installation <- dependencies[!dependencies %in% installed.packages()]
-          install.packages(needs_installation)
-          library("rmarkdown")
-        shell: Rscript {0}
+        uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          cache-version: 1
+          packages: |
+            any::rmarkdown
+            any::dplyr
+            ggplot2@3.5.1
+            plotly@4.10.4
+            any::sessioninfo
 
       - name: Render and Publish
         uses: quarto-dev/quarto-actions/publish@v2
