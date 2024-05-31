@@ -18,7 +18,7 @@ jobs:
         uses: actions/cache@v3
         id: cache
         with:
-          path: ${{ github.workspace }}
+          path: ${{ env.R_LIBS_USER }}
           key: ${{ runner.os }}-${{ hashFiles('.github/R-version') }}-1-${{ hashFiles('.github/depends.Rds') }}
           restore-keys: ${{ runner.os }}-${{ hashFiles('.github/R-version') }}-1-
 
