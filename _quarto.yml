@@ -13,7 +13,7 @@ website:
   page-navigation: true
   navbar:
     left:
-      - href: README.md
+      - href: index.md
         text: Home
 
   sidebar:
