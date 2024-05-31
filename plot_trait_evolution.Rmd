@@ -32,9 +32,9 @@ Participants will then get to **see the skull and beak shape** corresponding to 
 First we load the required packages and create some objects to compile data on trait evolution for each species.
 
 ```{r warning=F, message=FALSE}
-require(dplyr)
-require(ggplot2) #3.5.1
-require(plotly) #4.10.4
+library(dplyr)
+library(ggplot2) #3.5.1
+library(plotly) #4.10.4
 set.seed(1)
 
 t <- 0:100  # generate time vector
@@ -58,7 +58,7 @@ for(spp in spp.files){
   
   # generate trait evolution time-series and compile plotting data
   dt <-  rbind(dt, data.frame(t, 
-                              trait = c(0, rnorm(n = length(t) - 1, sd = sqrt(sig2)) %>% cumsum()),
+                              trait = c(0, rnorm(n = length(t) - 1, sd = sqrt(sig2)) |> cumsum()),
                               species = species.name))
   cols <- c(cols, color)
 }
