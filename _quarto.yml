@@ -4,7 +4,7 @@ project:
 
 
 website:
-  title: "Collaborative Coding with GitHub and RStudio"
+  title: ""
   page-footer:
     center: "Copyright, 2024 Open Science Center at LMU Munich"
     border: false
@@ -14,7 +14,6 @@ website:
   navbar:
     left:
       - href: index.md
-        text: Home
 
   sidebar:
     style: docked
