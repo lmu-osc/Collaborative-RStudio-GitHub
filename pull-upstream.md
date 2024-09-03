@@ -8,19 +8,23 @@ To integrate all the contributions made to the original repository into your loc
 
 2. **Terminal**: first make sure you are on the branch you wish to receive the modifications (today we didn't create branches other than the default one called 'main') by typing:  
 
-   `git checkout main`
+   ```bash
+   git checkout main
+   ```
 
 
-3. **Terminal**: type the command to pull the original repository and branch you wish to obtain locally which has the format: `git pull git@github.com:ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git` where you would replace original owner and repository to the appropriate names. Here: 
+4. **Terminal**: type the command to pull the original repository and branch you wish to obtain locally which has the format: `git pull git@github.com:ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git` where you would replace original owner and repository to the appropriate names. Here: 
 
-   `git pull git@github.com:lmu-osc/Collaborative-RStudio-GitHub.git`
+   ```bash
+   git pull git@github.com:lmu-osc/Collaborative-RStudio-GitHub.git
+   ```
   
 
     ![](./assets/command-line.png)
 
-4. **RStudio**: check in the Files tab that the new contributions appeared.
+6. **RStudio**: check in the Files tab that the new contributions appeared.
 
-5. **RStudio**: push those local changes to your GitHub repository (you can do this from the command line by typing `git push`)
+7. **RStudio**: push those local changes to your GitHub repository (you can do this from the command line by typing `git push`)
 
     ![](./assets/final-push.png)
 
