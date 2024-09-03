@@ -14,7 +14,7 @@
 <br />
 
 
-2. **GitHub**: verify that your changes were integrated in your GitHub repository by refreshing your GitHub repository webpage na dlooking into the params folder to see if your file is there.
+2. **GitHub**: verify that your changes were integrated in your GitHub repository by refreshing your GitHub repository webpage and looking into the params folder to see if your file is there.
 
 ***
 
