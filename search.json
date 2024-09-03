@@ -14,27 +14,15 @@
     "text": "Skulls are organised from largest to smallest. The largest skulls are vulture-like, (e.g. no. 50, the Andean condor Vultur gryphus) and the smallest are falconet-like, (e.g. no. 1 Collared falconet Microhierax caerulescens)\n\n\n\n\n\n\n\n\n\n\n\nsessioninfo::session_info()\n\n─ Session info ───────────────────────────────────────────────────────────────\n setting  value\n version  R version 4.4.0 (2024-04-24)\n os       Ubuntu 22.04.4 LTS\n system   x86_64, linux-gnu\n ui       X11\n language (EN)\n collate  C.UTF-8\n ctype    C.UTF-8\n tz       UTC\n date     2024-09-03\n pandoc   2.9.2.1 @ /usr/bin/ (via rmarkdown)\n\n─ Packages ───────────────────────────────────────────────────────────────────\n package     * version date (UTC) lib source\n cli           3.6.3   2024-06-21 [1] CRAN (R 4.4.0)\n colorspace    2.1-1   2024-07-26 [1] CRAN (R 4.4.0)\n crosstalk     1.2.1   2023-11-23 [1] CRAN (R 4.4.0)\n data.table    1.16.0  2024-08-27 [1] CRAN (R 4.4.0)\n digest        0.6.37  2024-08-19 [1] CRAN (R 4.4.0)\n dplyr       * 1.1.4   2023-11-17 [1] any (@1.1.4)\n evaluate      0.24.0  2024-06-10 [1] CRAN (R 4.4.0)\n fansi         1.0.6   2023-12-08 [1] CRAN (R 4.4.0)\n fastmap       1.2.0   2024-05-15 [1] CRAN (R 4.4.0)\n generics      0.1.3   2022-07-05 [1] CRAN (R 4.4.0)\n ggplot2     * 3.5.1   2024-04-23 [1] CRAN (R 4.4.0)\n glue          1.7.0   2024-01-09 [1] CRAN (R 4.4.0)\n gtable        0.3.5   2024-04-22 [1] CRAN (R 4.4.0)\n htmltools     0.5.8.1 2024-04-04 [1] CRAN (R 4.4.0)\n htmlwidgets   1.6.4   2023-12-06 [1] CRAN (R 4.4.0)\n httr          1.4.7   2023-08-15 [1] CRAN (R 4.4.0)\n jsonlite      1.8.8   2023-12-04 [1] CRAN (R 4.4.0)\n knitr         1.48    2024-07-07 [1] CRAN (R 4.4.0)\n labeling      0.4.3   2023-08-29 [1] CRAN (R 4.4.0)\n lazyeval      0.2.2   2019-03-15 [1] CRAN (R 4.4.0)\n lifecycle     1.0.4   2023-11-07 [1] CRAN (R 4.4.0)\n magrittr      2.0.3   2022-03-30 [1] CRAN (R 4.4.0)\n munsell       0.5.1   2024-04-01 [1] CRAN (R 4.4.0)\n pillar        1.9.0   2023-03-22 [1] CRAN (R 4.4.0)\n pkgconfig     2.0.3   2019-09-22 [1] CRAN (R 4.4.0)\n plotly      * 4.10.4  2024-01-13 [1] CRAN (R 4.4.0)\n purrr         1.0.2   2023-08-10 [1] CRAN (R 4.4.0)\n R6            2.5.1   2021-08-19 [1] CRAN (R 4.4.0)\n rlang         1.1.4   2024-06-04 [1] CRAN (R 4.4.0)\n rmarkdown     2.28    2024-08-17 [1] CRAN (R 4.4.0)\n scales        1.3.0   2023-11-28 [1] CRAN (R 4.4.0)\n sessioninfo   1.2.2   2021-12-06 [1] any (@1.2.2)\n tibble        3.2.1   2023-03-20 [1] CRAN (R 4.4.0)\n tidyr         1.3.1   2024-01-24 [1] CRAN (R 4.4.0)\n tidyselect    1.2.1   2024-03-11 [1] CRAN (R 4.4.0)\n utf8          1.2.4   2023-10-22 [1] CRAN (R 4.4.0)\n vctrs         0.6.5   2023-12-01 [1] CRAN (R 4.4.0)\n viridisLite   0.4.2   2023-05-02 [1] CRAN (R 4.4.0)\n withr         3.0.1   2024-07-31 [1] CRAN (R 4.4.0)\n xfun          0.47    2024-08-17 [1] CRAN (R 4.4.0)\n yaml          2.3.10  2024-07-26 [1] CRAN (R 4.4.0)\n\n [1] /home/runner/work/_temp/Library\n [2] /opt/R/4.4.0/lib/R/site-library\n [3] /opt/R/4.4.0/lib/R/library\n\n──────────────────────────────────────────────────────────────────────────────"
   },
   {
-    "objectID": "commit.html",
-    "href": "commit.html",
-    "title": "Commit changes locally",
+    "objectID": "clone.html",
+    "href": "clone.html",
+    "title": "Clone your GitHub repository",
     "section": "",
-    "text": "Commit changes locally\n\nTo avoid conflict during this collaborative coding exercice (i.e. contributors editing the same line of code at the same time), today, we will work on different files altogether. To avoid conflict in future projects, no tool will be able to replace good communication. However, GitHub offers tools to help that communication, called GitHub issues. And if need be, you could still resolve conflicts using the command line. Today, to avoid conflict, you will copy a template file and edit your own copy.\n\nRStudio: select params/params_tmpl.R and click on ‘More’, ‘Copy’, and give it the name of your imaginary species or your name. Please to not overwrite or edit the file params/params_tmpl.R.\n \n\n\n\nRStudio: edit your .R script\n\nThe parameters each participants need to supply are:\n\nsig2: A numeric value greater than 0 but smaller than 5. A numerical value doesn’t have quotaiton marks around it.\nspecies.name: a character string e.g. \"anas_krystallinus\". Try to create a species name out of your name! A string has quotation marks around it in R.\ncolor: e.g. \"red\", \"#FFFFFF\". This code or string should have quotation marks around it.\n\n(optional) If you want, you can use the RStudio colour picker to select a color. If you don’t have it installed, type install.packages(\"colourpicker\") in your console.\n\n\n\n\nRStudio: save your file and in the Git tab, tick the box next to *** your new script ONLY *** to stage your file and click ‘commit’.\n\n\n\n\nRStudio: supply a descriptive message of the commit and click commit",
+    "text": "Clone your GitHub repository\n\n\nGitHub: click on the green &lt;&gt; Code button, choose the SSH URL to secure your connection, and copy your repository’s URL.\n\n\n\n\nRStudio: create a new project\n\n\n\n\nRStudio: select Checkout a project from a version control repository\n\n\n\n\nRStudio: select Clone a project from a Git repository\n\n\n\n\nRStudio: paste the URL of your GitHub repository into ‘Repository URL’. Do not locate this new Git repository in the folder created in the first tutorial (i.e. so that each folder has its own Git database). Click Create Project. Your password will be requested.\n\n\n\n\nRStudio: Click on the Files tab to check that it contains all the files from the GitHub repository",
     "crumbs": [
       "Collaborative coding with GitHub and RStudio",
       "Tutorial",
-      "Commit to a Project"
-    ]
-  },
-  {
-    "objectID": "fork.html",
-    "href": "fork.html",
-    "title": "Fork a GitHub repository",
-    "section": "",
-    "text": "Fork a GitHub repository\n\n\nGitHub: go to https://github.com/lmu-osc/Collaborative-RStudio-GitHub.\n\n\n\nGitHub: click on Fork. GitHub is creating your own copy of the repository in your GitHub account. Forks are linked and traceable.\n\n\n\n\nGitHub: click on the green button ‘create fork’ with the default settings.\n\n\n\n\nGitHub: you should now have a fork of this repository in your own GitHub account.",
-    "crumbs": [
-      "Collaborative coding with GitHub and RStudio",
-      "Tutorial",
-      "Fork a Repo"
+      "Clone a Repo"
     ]
   },
   {
@@ -94,39 +82,27 @@
     ]
   },
   {
-    "objectID": "pull-upstream.html",
-    "href": "pull-upstream.html",
-    "title": "Pull upstream repository into your fork",
-    "section": "",
-    "text": "Pull upstream repository into your fork\n\nTo integrate all the contributions made to the original repository into your local repository, you may think that you could first integrate the changes from the original repository into your fork (your GitHub version) and then pull your fork (to update your local copy), but this is not possible. You will need to shortcircuit this by pulling the original repository into your local repository directly (and then push the local new changes to your remote version on GitHub). This means that this operation needs to happen locally, in RStudio. Because you will not be pulling from your fork (your remote GitHub) but from the original repository, and that this isn’t a daily operation, you do not have a shortcut for this in RStudio. This operation needs to be instructed in the command line, in the Terminal tab of RStudio.\n\nRStudio: go to the Terminal tab of Rstudio\nTerminal: first make sure you are on the branch you wish to receive the modifications (today we didn’t create branches other than the default one called ‘main’) by typing:\ngit checkout main\nTerminal: type the command to pull the original repository and branch you wish to obtain locally which has the format: git pull git@github.com:ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git where you would replace original owner and repository to the appropriate names. Here:\ngit pull git@github.com:lmu-osc/Collaborative-RStudio-GitHub.git\n\nRStudio: check in the Files tab that the new contributions appeared.\nRStudio: push those local changes to your GitHub repository (you can do this from the command line by typing git push)\n\n\nYou are done!",
-    "crumbs": [
-      "Collaborative coding with GitHub and RStudio",
-      "Tutorial",
-      "Pull Upstream"
-    ]
-  },
-  {
-    "objectID": "clone.html",
-    "href": "clone.html",
-    "title": "Clone your GitHub repository",
-    "section": "",
-    "text": "Clone your GitHub repository\n\n\nGitHub: click on the green &lt;&gt; Code button, choose the SSH URL to secure your connection, and copy your repository’s URL.\n\n\n\n\nRStudio: create a new project\n\n\n\n\nRStudio: select Checkout a project from a version control repository\n\n\n\n\nRStudio: select Clone a project from a Git repository\n\n\n\n\nRStudio: paste the URL of your GitHub repository into ‘Repository URL’. Do not locate this new Git repository in the folder created in the first tutorial (i.e. so that each folder has its own Git database). Click Create Project. Your password will be requested.\n\n\n\n\nRStudio: Click on the Files tab to check that it contains all the files from the GitHub repository",
-    "crumbs": [
-      "Collaborative coding with GitHub and RStudio",
-      "Tutorial",
-      "Clone a Repo"
-    ]
-  },
-  {
     "objectID": "push.html",
     "href": "push.html",
     "title": "Push your local changes to your remote repository",
     "section": "",
-    "text": "Push your local changes to your remote repository\n\n\nRStudio: push your changes to GitHub by clicking, in the Git tab, the green arrow pointing up and entering your password.\n\nwhen successful you should get this pop up box which you can close:\n\n\n\n\nGitHub: verify that your changes were integrated in your GitHub repository by refreshing your GitHub repository webpage na dlooking into the params folder to see if your file is there.",
+    "text": "Push your local changes to your remote repository\n\n\nRStudio: push your changes to GitHub by clicking, in the Git tab, the green arrow pointing up and entering your password.\n\nwhen successful you should get this pop up box which you can close:\n\n\n\n\nGitHub: verify that your changes were integrated in your GitHub repository by refreshing your GitHub repository webpage and looking into the params folder to see if your file is there.",
     "crumbs": [
       "Collaborative coding with GitHub and RStudio",
       "Tutorial",
       "Push Changes"
+    ]
+  },
+  {
+    "objectID": "fork.html",
+    "href": "fork.html",
+    "title": "Fork a GitHub repository",
+    "section": "",
+    "text": "Fork a GitHub repository\n\n\nGitHub: go to https://github.com/lmu-osc/Collaborative-RStudio-GitHub.\n\n\n\nGitHub: click on Fork. GitHub is creating your own copy of the repository in your GitHub account. Forks are linked and traceable.\n\n\n\n\nGitHub: click on the green button ‘create fork’ with the default settings.\n\n\n\n\nGitHub: you should now have a fork of this repository in your own GitHub account.",
+    "crumbs": [
+      "Collaborative coding with GitHub and RStudio",
+      "Tutorial",
+      "Fork a Repo"
     ]
   },
   {
@@ -139,6 +115,30 @@
       "Collaborative coding with GitHub and RStudio",
       "Tutorial",
       "Merge Changes"
+    ]
+  },
+  {
+    "objectID": "commit.html",
+    "href": "commit.html",
+    "title": "Commit changes locally",
+    "section": "",
+    "text": "Commit changes locally\n\nTo avoid conflict during this collaborative coding exercice (i.e. contributors editing the same line of code at the same time), today, we will work on different files altogether. To avoid conflict in future projects, no tool will be able to replace good communication. However, GitHub offers tools to help that communication, called GitHub issues. And if need be, you could still resolve conflicts using the command line. Today, to avoid conflict, you will copy a template file and edit your own copy.\n\nRStudio: select params/params_tmpl.R and click on ‘More’, ‘Copy’, and give it the name of your imaginary species or your name. Please to not overwrite or edit the file params/params_tmpl.R.\n \n\n\n\nRStudio: edit your .R script\n\nThe parameters each participants need to supply are:\n\nsig2: A numeric value greater than 0 but smaller than 5. A numerical value doesn’t have quotaiton marks around it.\nspecies.name: a character string e.g. \"anas_krystallinus\". Try to create a species name out of your name! A string has quotation marks around it in R.\ncolor: e.g. \"red\", \"#FFFFFF\". This code or string should have quotation marks around it.\n\n(optional) If you want, you can use the RStudio colour picker to select a color. If you don’t have it installed, type install.packages(\"colourpicker\") in your console.\n\n\n\n\nRStudio: save your file and in the Git tab, tick the box next to *** your new script ONLY *** to stage your file and click ‘commit’.\n\n\n\n\nRStudio: supply a descriptive message of the commit and click commit",
+    "crumbs": [
+      "Collaborative coding with GitHub and RStudio",
+      "Tutorial",
+      "Commit to a Project"
+    ]
+  },
+  {
+    "objectID": "pull-upstream.html",
+    "href": "pull-upstream.html",
+    "title": "Pull upstream repository into your fork",
+    "section": "",
+    "text": "Pull upstream repository into your fork\n\nTo integrate all the contributions made to the original repository into your local repository, you may think that you could first integrate the changes from the original repository into your fork (your GitHub version) and then pull your fork (to update your local copy), but this is not possible. You will need to shortcircuit this by pulling the original repository into your local repository directly (and then push the local new changes to your remote version on GitHub). This means that this operation needs to happen locally, in RStudio. Because you will not be pulling from your fork (your remote GitHub) but from the original repository, and that this isn’t a daily operation, you do not have a shortcut for this in RStudio. This operation needs to be instructed in the command line, in the Terminal tab of RStudio.\n\nRStudio: go to the Terminal tab of Rstudio\nTerminal: first make sure you are on the branch you wish to receive the modifications (today we didn’t create branches other than the default one called ‘main’) by typing:\ngit checkout main\nTerminal: type the command to pull the original repository and branch you wish to obtain locally which has the format: git pull git@github.com:ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git where you would replace original owner and repository to the appropriate names. Here:\ngit pull git@github.com:lmu-osc/Collaborative-RStudio-GitHub.git\n\nRStudio: check in the Files tab that the new contributions appeared.\nRStudio: push those local changes to your GitHub repository (you can do this from the command line by typing git push)\n\n\nYou are done!",
+    "crumbs": [
+      "Collaborative coding with GitHub and RStudio",
+      "Tutorial",
+      "Pull Upstream"
     ]
   }
 ]
