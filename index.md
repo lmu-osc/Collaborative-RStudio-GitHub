@@ -1,7 +1,7 @@
 # Collaborative coding with GitHub and RStudio
 
 ## About this work
-This work was originally created by [Anna Krystalli](https://github.com/annakrystalli) from [RSE-Sheffield](https://github.com/RSE-Sheffield) under a [MIT licence](https://github.com/lmu-osc/Collaborative-RStudio-GitHub/blob/master/LICENSE) ([original repository](https://github.com/RSE-Sheffield/collaborative_github_exercise)). It was subsequently adapted by [Malika Ihle](https://ox.ukrn.org/people/#MalikaIhle) from [Reproducible Research Oxford](https://ox.ukrn.org/), with the contributions of [Adam Kenny](https://github.com/Kennyanthro). It is now maintained by [Malika Ihle](https://www.osc.uni-muenchen.de/about_us/coordinator/index.html) at the [LMU Open Science Center](https://www.osc.uni-muenchen.de/index.html). The overview image is from [Dumitru Uzun](https://duzun.me/tips/git). The exercice is based on the [research](http://eprints.whiterose.ac.uk/99452/1/Bright%20et%20al.%202016_SelfArchive.pdf) of [Jen Bright](https://twitter.com/MorphobeakGeek) who also kindly provided the gifs used in the exercice. You are free to use, copy, modify, distribute this work for your own projects.
+This work was originally created by [Anna Krystalli](https://github.com/annakrystalli) from [RSE-Sheffield](https://github.com/RSE-Sheffield) under a [MIT licence](https://github.com/lmu-osc/Collaborative-RStudio-GitHub/blob/master/LICENSE) ([original repository](https://github.com/RSE-Sheffield/collaborative_github_exercise)). It was subsequently adapted by [Malika Ihle](https://ox.ukrn.org/people/#MalikaIhle) during her time at [Reproducible Research Oxford](https://ox.ukrn.org/), with the contributions of [Adam Kenny](https://github.com/Kennyanthro). It is now maintained by [Malika Ihle](https://www.osc.uni-muenchen.de/about_us/coordinator/index.html) at the [LMU Open Science Center](https://www.osc.uni-muenchen.de/index.html). The overview image is from [Dumitru Uzun](https://duzun.me/tips/git). The exercice is based on the [research](http://eprints.whiterose.ac.uk/99452/1/Bright%20et%20al.%202016_SelfArchive.pdf) of [Jen Bright](https://twitter.com/MorphobeakGeek) who also kindly provided the gifs used in the exercice. You are free to use, copy, modify, distribute this work for your own projects.
 
 
 This session follows-up from the [Introduction to RStudio, Git, and GitHub](https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/) and is accompanied by this 10 min introductory [videorecording](https://osf.io/dcqt9/). 
@@ -23,7 +23,7 @@ In this session, you will
 <img src="assets/new-overview.png" width="750">  
 <br/>
 
-In this example, the file you will contribute is required to simulate the evolutionary trajectory of an imaginary bird species’ body size. We will use RStudio and GitHub to collate all species files and plot them all up together at the end. We will also discover the skull and beak shapes associated with each species you contributed (after they 'evolved' through a simple brownian motion  model which assumes steps to progress completely at random).
+In this example, the file you will contribute is required to simulate the evolutionary trajectory of an imaginary bird species’ beak size. We will use RStudio and GitHub to collate all species files and plot them all up together at the end. We will also discover the skull and beak shapes associated with each species you contributed (after they 'evolved' through a simple brownian motion  model which assumes steps to progress completely at random).
 
 ![](gif.gif)
 
