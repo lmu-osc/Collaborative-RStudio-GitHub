@@ -1,4 +1,6 @@
-# Pull upstream repository into your fork
+---
+title: Pull upstream repository into your fork
+---
 
 ***
 

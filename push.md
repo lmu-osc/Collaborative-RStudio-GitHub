@@ -1,4 +1,6 @@
-# Push your local changes to your remote repository
+---
+title: "Push your local changes to your remote repository"
+---
 
 ***
 
