@@ -13,9 +13,9 @@ website:
   repo-url: https://github.com/lmu-osc/Collaborative-RStudio-GitHub
   repo-actions: [edit, issue]
   page-navigation: true
-  favicon: assets/LMU-OSC_favicon.jpg
+  favicon: assets/LMU_OSC_Book.png
   margin-header: |
-  ![](/assets/LMU-OSC_logo.jpg){width="175"}
+    ![](/assets/LMU-OSC_logo.jpg){width="175"}
   navbar:
     left:
       - href: index.md
@@ -44,7 +44,7 @@ website:
 
 format:
   html:
-    theme: 
+    theme:
       - cosmo
       - custom.scss
     css: styles.css
