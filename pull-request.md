@@ -1,4 +1,6 @@
-# Create a pull request to ask your collaborator to merge your fork to the original repository
+---
+title: Create a pull request to ask your collaborator to merge your fork to the original repository
+---
 
 ***
 

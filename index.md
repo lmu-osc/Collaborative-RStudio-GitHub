@@ -1,4 +1,6 @@
-# Collaborative coding with GitHub and RStudio
+---
+title: Collaborative coding with GitHub and RStudio
+---
 
 ## About this work
 This work was originally created by [Anna Krystalli](https://github.com/annakrystalli) from [RSE-Sheffield](https://github.com/RSE-Sheffield) under a [MIT licence](https://github.com/lmu-osc/Collaborative-RStudio-GitHub/blob/master/LICENSE) ([original repository](https://github.com/RSE-Sheffield/collaborative_github_exercise)). It was subsequently adapted by [Malika Ihle](https://ox.ukrn.org/people/#MalikaIhle) during her time at [Reproducible Research Oxford](https://ox.ukrn.org/), with the contributions of [Adam Kenny](https://github.com/Kennyanthro). It is now maintained by [Malika Ihle](https://www.osc.uni-muenchen.de/about_us/coordinator/index.html) at the [LMU Open Science Center](https://www.osc.uni-muenchen.de/index.html). The overview image is from [Dumitru Uzun](https://duzun.me/tips/git). The exercice is based on the [research](http://eprints.whiterose.ac.uk/99452/1/Bright%20et%20al.%202016_SelfArchive.pdf) of [Jen Bright](https://twitter.com/MorphobeakGeek) who also kindly provided the gifs used in the exercice. You are free to use, copy, modify, distribute this work for your own projects.

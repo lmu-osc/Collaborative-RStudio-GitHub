@@ -1,4 +1,6 @@
-# Observe the merged contributions
+---
+title: Observe the merged contributions
+---
 
 ***
 

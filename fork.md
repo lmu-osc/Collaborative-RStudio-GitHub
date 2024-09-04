@@ -1,4 +1,6 @@
-# Fork a GitHub repository
+---
+title: Fork a GitHub repository
+---
 
 ***
 1. **GitHub**: go to [https://github.com/lmu-osc/Collaborative-RStudio-GitHub](https://github.com/lmu-osc/Collaborative-RStudio-GitHub).
