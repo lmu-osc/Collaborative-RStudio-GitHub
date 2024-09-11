@@ -14,4 +14,4 @@ color <- "#FFFFFF"
 
   # tip: pick a color using rstudio colour picker.
   # Addins > Colour Picker (to install: install.packages("colourpicker"))
-install.packages("colourpicker")
+#install.packages("colourpicker")

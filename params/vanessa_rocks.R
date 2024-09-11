@@ -9,7 +9,7 @@ sig2 <- 2
 # e.g. "anas_krystallinus"
 species.name <- "vanessas_lupinus"
 # e.g. "red"
-install.packages("colourpicker")
+#install.packages("colourpicker")
 color <- "#055C17"
 
   # tip: pick a color using rstudio colour picker.
