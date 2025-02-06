@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Krystalli"
+  given-names: "Anna"
+  orcid: "https://orcid.org/0000-0002-2378-4915"
+title: "Collaborative coding with GitHub and RStudio"
+version: 1.0.0
+doi:
+date-released: 2016-07-01
+repository-code: "https://github.com/lmu-osc/Collaborative-RStudio-GitHub"
+url: "https://github.com/lmu-osc/Collaborative-RStudio-GitHub"
