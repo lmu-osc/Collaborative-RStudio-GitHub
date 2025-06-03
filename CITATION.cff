@@ -6,22 +6,7 @@ authors:
   orcid: "https://orcid.org/0000-0002-2378-4915"
   affiliation:
     - name: "University of Sheffield"
-      ror: " https://ror.org/05krs5044"
-
-- family-names: "Ihle"
-  given-names: "Malika"
-  orcid: "https://orcid.org/0000-0002-3242-5981"
-  affiliation:
-    - name: "LMU Open Science Center"
-      ror: "https://ror.org/029e6qe04"
-
-- family-names: "Kenny"
-  given-names: "Adam"
-  orcid: "https://orcid.org/0000-0001-9306-3091"
-  affiliation:
-    - name: "Calleva Research Centre, University of Oxford"
-      ror: "https://ror.org/00jwxmn37"
-
+      ror: " https://ror.org/05krs5044"      
 title: "Collaborative coding with GitHub and RStudio"
 version: 0.1.0
 doi: "DOI_HERE_AFTER_GENERATED"
