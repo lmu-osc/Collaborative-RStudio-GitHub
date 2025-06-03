@@ -1,47 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://lmu-osc.github.io/Collaborative-RStudio-GitHub/fork.html</loc>
+    <lastmod>2025-06-03T20:43:21.847Z</lastmod>
+  </url>
+  <url>
     <loc>https://lmu-osc.github.io/Collaborative-RStudio-GitHub/index.html</loc>
-    <lastmod>2025-05-15T18:15:10.817Z</lastmod>
+    <lastmod>2025-06-03T20:43:21.855Z</lastmod>
   </url>
   <url>
     <loc>https://lmu-osc.github.io/Collaborative-RStudio-GitHub/LICENSE.html</loc>
-    <lastmod>2025-05-15T18:15:10.795Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lmu-osc.github.io/Collaborative-RStudio-GitHub/LICENSE-CODE.html</loc>
-    <lastmod>2025-05-15T18:15:10.795Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lmu-osc.github.io/Collaborative-RStudio-GitHub/commit.html</loc>
-    <lastmod>2025-05-15T18:15:10.809Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lmu-osc.github.io/Collaborative-RStudio-GitHub/fork.html</loc>
-    <lastmod>2025-05-15T18:15:10.809Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lmu-osc.github.io/Collaborative-RStudio-GitHub/pull-upstream.html</loc>
-    <lastmod>2025-05-15T18:15:10.818Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lmu-osc.github.io/Collaborative-RStudio-GitHub/clone.html</loc>
-    <lastmod>2025-05-15T18:15:10.809Z</lastmod>
+    <lastmod>2025-06-03T20:43:21.834Z</lastmod>
   </url>
   <url>
     <loc>https://lmu-osc.github.io/Collaborative-RStudio-GitHub/plot_trait_evolution.html</loc>
-    <lastmod>2025-05-15T18:15:10.818Z</lastmod>
+    <lastmod>2025-06-03T20:43:21.856Z</lastmod>
   </url>
   <url>
-    <loc>https://lmu-osc.github.io/Collaborative-RStudio-GitHub/push.html</loc>
-    <lastmod>2025-05-15T18:15:10.818Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lmu-osc.github.io/Collaborative-RStudio-GitHub/merge.html</loc>
-    <lastmod>2025-05-15T18:15:10.817Z</lastmod>
+    <loc>https://lmu-osc.github.io/Collaborative-RStudio-GitHub/clone.html</loc>
+    <lastmod>2025-06-03T20:43:21.847Z</lastmod>
   </url>
   <url>
     <loc>https://lmu-osc.github.io/Collaborative-RStudio-GitHub/pull-request.html</loc>
-    <lastmod>2025-05-15T18:15:10.818Z</lastmod>
+    <lastmod>2025-06-03T20:43:21.856Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lmu-osc.github.io/Collaborative-RStudio-GitHub/LICENSE-CODE.html</loc>
+    <lastmod>2025-06-03T20:43:21.834Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lmu-osc.github.io/Collaborative-RStudio-GitHub/commit.html</loc>
+    <lastmod>2025-06-03T20:43:21.847Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lmu-osc.github.io/Collaborative-RStudio-GitHub/pull-upstream.html</loc>
+    <lastmod>2025-06-03T20:43:21.856Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lmu-osc.github.io/Collaborative-RStudio-GitHub/merge.html</loc>
+    <lastmod>2025-06-03T20:43:21.855Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lmu-osc.github.io/Collaborative-RStudio-GitHub/push.html</loc>
+    <lastmod>2025-06-03T20:43:21.856Z</lastmod>
   </url>
 </urlset>
