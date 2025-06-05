@@ -11,7 +11,6 @@ sig2 <- 2.5
 species.name <- "jus_saurius"
 
 # my colors: c("#6B8E23", "#00688B", "#FFB90F")
-install.packages("colourpicker")
 color <- "#48F2D9"
 
   # tip: pick a color using rstudio colour picker.
