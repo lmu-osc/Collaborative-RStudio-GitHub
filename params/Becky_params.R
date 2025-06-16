@@ -11,7 +11,7 @@ sig2 <- 2.5
 species.name <- "Beckya curiosa"
 
 # my colors: c("#6B8E23", "#00688B", "#FFB90F")
-color <- "#00688B"c("#008B8B", "#FFFFFF", "#FFFFFF")
+color <- "#00688B"
 
   # tip: pick a color using rstudio colour picker.
   # Addins > Colour Picker (to install: install.packages("colourpicker"))
