@@ -1,13 +1,11 @@
 ---
+title: "Evolutionary lottery of skull and beak morphology"
 output:
-  html_document:
+  html_document: 
     theme: cerulean
   pdf_document: default
 ---
 
-# **Evolutionary lottery of skull and beak morphology**
-
-<br>
 
 > [**Beak and skull shapes in birds of prey ("raptors") are strongly coupled and largely controlled by size.**](http://eprints.whiterose.ac.uk/99452/1/Bright%20et%20al.%202016_SelfArchive.pdf)
 
@@ -115,6 +113,6 @@ if(length(gf) > 0){
 
 ### Session Info
 
-```{r}
+```{r, warning=FALSE}
 sessioninfo::session_info()
 ```
