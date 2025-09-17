@@ -10,7 +10,7 @@ sig2 <-3
 species.name <- "frankas_frankensteinius"
 
 # e.g. "red"
-color <- "c("#548B54", "#FFFFFF", "#FFFFFF")"
+color <- c("#548B54")
 
 # tip: pick a color using rstudio colour picker.
 # Addins > Colour Picker (to install: install.packages("colourpicker"))
