@@ -10,7 +10,7 @@ sig2 <- 3.8
 species.name <- "redinus"
 
 # e.g. "red"
-color <-#0F7551
+color <-"#0F7551"
 
 # tip: pick a color using rstudio colour picker.
 # Addins > Colour Picker (to install: install.packages("colourpicker"))
