@@ -7,7 +7,7 @@
 sig2 <- 0.97
 
 # e.g. "anas_krystallinus"
-species.name <- "couchy"
+species.name <- "sofa"
 
 # e.g. "red"
 color <- "#c16423"
