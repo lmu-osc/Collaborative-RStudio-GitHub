@@ -7,7 +7,7 @@ aliases: [plot_trait_evolution.html]
 
 gif provided by the awesome **Jen Bright** [**\@MorphobeakGeek**](https://twitter.com/MorphobeakGeek)!
 
-![](gif.gif)
+![](/gif.gif)
 
 In this exercise we will **use a github repo** to collaboratively collate and *simulate evolutionary trajectories for each participants' species* ***body size*** using a simple brownian motion evolutionary model. This assumes evolutionary steps to progress comletely at random. You could say:
 
