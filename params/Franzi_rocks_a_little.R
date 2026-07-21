@@ -1,7 +1,6 @@
 # !!copied version!! editable :)
 # ________________________________________________
 # input parameters
-# install.packages("colourpicker")
 
 # sigma2: 0 < value < 5
 sig2 <- 4
