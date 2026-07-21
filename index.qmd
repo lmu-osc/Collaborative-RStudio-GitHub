@@ -37,13 +37,13 @@ In this example, the file you will contribute is required to simulate the evolut
 ## Step-by-step tutorial
 The material is self-paced and it is necessary that you work through the sections in order.
 
-* [Fork](fork.qmd) - Copy your collaborator's repository 
-* [Clone](clone.qmd) - Copy your repository locally
-* [Commit](commit.qmd) - Make changes and save them locally
-* [Push](push.qmd) - Update your remote repository with your local changes
-* [Pull request](pull-request.qmd) - Ask your collaborator to integrate your changes in their repository
-* [Merged results](merge.qmd) - Observe the merge of all contributions
-* [Pull the upstream repository into your fork](pull-upstream.qmd) - Update your fork with all contributions made to the original repository
+* [Fork](fork/index.qmd) - Copy your collaborator's repository 
+* [Clone](clone/index.qmd) - Copy your repository locally
+* [Commit](commit/index.qmd) - Make changes and save them locally
+* [Push](push/index.qmd) - Update your remote repository with your local changes
+* [Pull request](pull-request/index.qmd) - Ask your collaborator to integrate your changes in their repository
+* [Merged results](merge/index.qmd) - Observe the merge of all contributions
+* [Pull the upstream repository into your fork](pull-upstream/index.qmd) - Update your fork with all contributions made to the original repository
 
 
 ::: {.callout-tip title="Support the LMU Open Science Center!"}

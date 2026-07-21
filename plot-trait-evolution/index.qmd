@@ -46,11 +46,11 @@ We'll use the parameters supplied in your scripts to generate brownian trait evo
 
 ```{r}
 #getting the file names for everything except the template that has undefined values
-spp.files <- dir("params/")[dir("params/") != "params_tmpl.R"]
+spp.files <- dir("../params/")[dir("../params/") != "params_tmpl.R"]
 
 for (spp in spp.files) {
   # source parameters for each species
-  source(file.path("params", spp))
+  source(file.path("../params", spp))
 
   # generate trait evolution time-series and compile plotting data
   dt <- rbind(
@@ -103,7 +103,7 @@ Skulls are organised from **largest** to **smallest**. The largest skulls are **
 skull <- dt[dt$t == 100, ]
 skull <- skull[order(skull$trait, decreasing = T), ]
 
-gf <- list.files("gif/")
+gf <- list.files("../gif/")
 
 if (length(gf) > 0) {
   max.x <- max(abs(dt$trait))
@@ -121,7 +121,7 @@ if (length(gf) > 0) {
       "\n",
       sep = ""
     )
-    cat("![](gif/", gf[bins[i]], ")", "\n", "\n", sep = "")
+    cat("![](../gif/", gf[bins[i]], ")", "\n", "\n", sep = "")
   }
 }
 ```

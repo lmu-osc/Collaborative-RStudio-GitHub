@@ -34,19 +34,19 @@ website:
         href: index.qmd
       - section: "Tutorial"
         contents:
-          - href: fork.qmd
+          - href: fork/index.qmd
             text: "Fork a Repo"
-          - href: clone.qmd
+          - href: clone/index.qmd
             text: "Clone a Repo"
-          - href: commit.qmd
+          - href: commit/index.qmd
             text: "Commit to a Project"
-          - href: push.qmd
+          - href: push/index.qmd
             text: "Push Changes"
-          - href: pull-request.qmd
+          - href: pull-request/index.qmd
             text: "Pull Request"
-          - href: merge.qmd
+          - href: merge/index.qmd
             text: "Merge Changes"
-          - href: pull-upstream.qmd
+          - href: pull-upstream/index.qmd
             text: "Pull Upstream"
 # End Website
 
