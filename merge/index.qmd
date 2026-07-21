@@ -36,9 +36,9 @@ aliases: [merge.html]
 <br />
 
 
-4. **Collaborator's screen - RStudio**: They will knit the Rmarkdown file `plot-trait-evolution/index.qmd` which sources all the contributed files. Knitting a Rmarkdown file means rendering the Rmarkdown code (that integrate R code and Markdown code) into a defined format, here a html file. This file generates plots and figures based on the parameters that were contributed.  
+4. **Collaborator's screen - RStudio**: They will render the Quarto file `plot-trait-evolution/index.qmd` which sources all the contributed files. Rendering a Quarto file means compiling the R code chunks and plain Markdown script of the file into a combine document of a defined format, here a html file. This file generates plots and figures based on the parameters that were contributed.  
 
-    ![](/assets/knit.png)
+    ![](/assets/render.png)
 
 <br />
 
