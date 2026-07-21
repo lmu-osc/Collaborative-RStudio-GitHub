@@ -4,6 +4,7 @@ project:
 # End Project
 
 # Begin Website
+repo-url: https://github.com/lmu-osc/Collaborative-RStudio-GitHub
 website:
   title: "Collaborative coding with GitHub and RStudio"
   page-footer:

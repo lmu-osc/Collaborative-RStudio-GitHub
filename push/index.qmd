@@ -8,11 +8,11 @@ aliases: [push.html]
 
 1. **RStudio**: push your changes to GitHub by clicking, in the Git tab, the green arrow pointing up and entering your password.
 
-    ![](./assets/push-rstudio.png)
+    ![](/assets/push-rstudio.png)
 
     when successful you should get this pop up box which you can close:
 
-    <img src="assets/push-github.png" width="500">
+    <img src="/assets/push-github.png" width="500">
 
 
 <br />
