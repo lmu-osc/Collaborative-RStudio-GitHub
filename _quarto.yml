@@ -1,6 +1,9 @@
 # Begin Project
 project:
   type: tutorial-template
+  render:
+    - "*.qmd"
+    - "!plot-trait-evolution.qmd"
 # End Project
 
 # Begin Website
