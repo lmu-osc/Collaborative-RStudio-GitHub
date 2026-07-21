@@ -1,11 +1,7 @@
 ---
 title: "Evolutionary lottery of skull and beak morphology"
-output:
-  html_document: 
-    theme: cerulean
-  pdf_document: default
+aliases: [plot_trait_evolution.html]
 ---
-
 
 > [**Beak and skull shapes in birds of prey ("raptors") are strongly coupled and largely controlled by size.**](http://eprints.whiterose.ac.uk/99452/1/Bright%20et%20al.%202016_SelfArchive.pdf)
 
@@ -29,13 +25,15 @@ Participants will then get to **see the skull and beak shape** corresponding to 
 
 First we load the required packages and create some objects to compile data on trait evolution for each species.
 
-```{r warning=F, message=FALSE}
+```{r}
+#| warning: false
+#| message: false
 library(dplyr)
-library(ggplot2) #3.5.1
-library(plotly) #4.10.4
+library(ggplot2)
+library(plotly)
 set.seed(1)
 
-t <- 0:100  # generate time vector
+t <- 0:100 # generate time vector
 dt <- NULL # generate object to compile time-series data
 cols <- NULL # generate object to compile trendline colours
 ```
@@ -50,33 +48,40 @@ We'll use the parameters supplied in your scripts to generate brownian trait evo
 #getting the file names for everything except the template that has undefined values
 spp.files <- dir("params/")[dir("params/") != "params_tmpl.R"]
 
-for(spp in spp.files){
+for (spp in spp.files) {
   # source parameters for each species
   source(file.path("params", spp))
-  
+
   # generate trait evolution time-series and compile plotting data
-  dt <-  rbind(dt, data.frame(t, 
-                              trait = c(0, rnorm(n = length(t) - 1, sd = sqrt(sig2)) |> cumsum()),
-                              species = species.name))
+  dt <- rbind(
+    dt,
+    data.frame(
+      t,
+      trait = c(0, rnorm(n = length(t) - 1, sd = sqrt(sig2)) |> cumsum()),
+      species = species.name
+    )
+  )
   cols <- c(cols, color)
 }
-
 ```
-
 
 ### Plot trait evolution timeseries
 
 Use the data generated to plot all species.
 
-```{r fig.width = 9}
+```{r}
+#| fig-width: 9
 
 # Specify the order of species based on the order of colors in cols to stop a mismatch in colours
 dt$species <- factor(dt$species, levels = unique(dt$species))
 
 # Create the ggplot object
-p <- ggplot(data = dt, aes(x = t, y = trait, group = species, colour = species)) + 
-  geom_line() + 
-  scale_colour_manual(values = cols) 
+p <- ggplot(
+  data = dt,
+  aes(x = t, y = trait, group = species, colour = species)
+) +
+  geom_line() +
+  scale_colour_manual(values = cols)
 
 # Plot the results
 ggplotly(p)
@@ -92,20 +97,31 @@ ggplotly(p)
 
 Skulls are organised from **largest** to **smallest**. The largest skulls are **vulture-like**, (e.g. **no. 50, the Andean condor** [*Vultur gryphus*](https://en.wikipedia.org/wiki/Andean_condor)) and the smallest are **falconet-like**, (e.g. **no. 1 Collared falconet** [*Microhierax caerulescens*](https://en.wikipedia.org/wiki/Collared_falconet))
 
-```{r, echo=FALSE, results='asis'}
-skull <- dt[dt$t == 100,] 
-skull <- skull[order(skull$trait, decreasing = T),]
+```{r}
+#| echo: false
+#| results: asis
+skull <- dt[dt$t == 100, ]
+skull <- skull[order(skull$trait, decreasing = T), ]
 
 gf <- list.files("gif/")
 
-if(length(gf) > 0){
+if (length(gf) > 0) {
   max.x <- max(abs(dt$trait))
   breaks <- seq(-max.x, max.x, length.out = 51)
   bins <- cut(skull$trait, breaks = breaks, include.lowest = T, labels = F)
-  
-  for(i in 1:nrow(skull)){
-    cat("### **No: ",bins[i], "** ***", as.character(skull$species[i]),"***", "\n", "\n", sep = "")
-    cat("![](gif/", gf[bins[i]], ")",  "\n", "\n", sep = "")
+
+  for (i in 1:nrow(skull)) {
+    cat(
+      "### **No: ",
+      bins[i],
+      "** ***",
+      as.character(skull$species[i]),
+      "***",
+      "\n",
+      "\n",
+      sep = ""
+    )
+    cat("![](gif/", gf[bins[i]], ")", "\n", "\n", sep = "")
   }
 }
 ```
@@ -113,6 +129,7 @@ if(length(gf) > 0){
 
 ### Session Info
 
-```{r, warning=FALSE}
+```{r}
+#| warning: false
 sessioninfo::session_info()
 ```

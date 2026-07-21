@@ -1,5 +1,7 @@
 ---
 title: "Push your local changes to your remote repository"
+aliases: [push.html]
+
 ---
 
 ***
@@ -19,4 +21,3 @@ title: "Push your local changes to your remote repository"
 2. **GitHub**: verify that your changes were integrated in your GitHub repository by refreshing your GitHub repository webpage and looking into the params folder to see if your file is there.
 
 ***
-

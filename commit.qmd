@@ -1,5 +1,7 @@
 ---
 title: Commit changes locally
+aliases: [commit.html]
+
 ---
 
 ***
@@ -45,4 +47,3 @@ To avoid conflict during this collaborative coding exercice (i.e. contributors e
 
 
 ***
-

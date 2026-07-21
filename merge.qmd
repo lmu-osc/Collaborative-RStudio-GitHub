@@ -1,5 +1,7 @@
 ---
 title: Observe the merged contributions
+aliases: [merge.html]
+
 ---
 
 ***
@@ -34,7 +36,7 @@ title: Observe the merged contributions
 <br />
 
 
-4. **Collaborator's screen - RStudio**: They will knit the Rmarkdown file `plot-trait-evolution.Rmd` which sources all the contributed files. Knitting a Rmarkdown file means rendering the Rmarkdown code (that integrate R code and Markdown code) into a defined format, here a html file. This file generates plots and figures based on the parameters that were contributed.  
+4. **Collaborator's screen - RStudio**: They will knit the Rmarkdown file `plot-trait-evolution.qmd` which sources all the contributed files. Knitting a Rmarkdown file means rendering the Rmarkdown code (that integrate R code and Markdown code) into a defined format, here a html file. This file generates plots and figures based on the parameters that were contributed.  
 
     ![](./assets/knit.png)
 
@@ -54,4 +56,3 @@ This is how one can integrate data and code to a common repository shared amongs
 
 
 ***
-

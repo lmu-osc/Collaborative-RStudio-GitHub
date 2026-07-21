@@ -1,5 +1,7 @@
 ---
 title: Fork a GitHub repository
+aliases: [fork.html]
+
 ---
 
 ***
@@ -27,4 +29,3 @@ title: Fork a GitHub repository
 <br />
   
 ***
-

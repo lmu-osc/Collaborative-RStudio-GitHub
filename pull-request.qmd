@@ -1,5 +1,7 @@
 ---
 title: Create a pull request to ask your collaborator to merge your fork to the original repository
+aliases: [pull-request.html]
+
 ---
 
 ***
@@ -24,4 +26,3 @@ title: Create a pull request to ask your collaborator to merge your fork to the 
 
 
 ***
-

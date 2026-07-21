@@ -1,5 +1,7 @@
 ---
 title: Collaborative coding with GitHub and RStudio
+aliases: [index.html]
+
 ---
 
 ## About this work
@@ -25,7 +27,7 @@ In this session, you will
 <img src="assets/new-overview.png" width="750">  
 <br/>
 
-In this example, the file you will contribute is required to simulate the evolutionary trajectory of an imaginary bird species’ beak size. We will use RStudio and GitHub to collate all species files and plot them all up together at the end. We will also discover the skull and beak shapes associated with each species you contributed (after they 'evolved' through a simple brownian motion  model which assumes steps to progress completely at random).
+In this example, the file you will contribute is required to simulate the evolutionary trajectory of an imaginary bird species' beak size. We will use RStudio and GitHub to collate all species files and plot them all up together at the end. We will also discover the skull and beak shapes associated with each species you contributed (after they 'evolved' through a simple brownian motion  model which assumes steps to progress completely at random).
 
 ![](gif.gif)
 
@@ -35,12 +37,20 @@ In this example, the file you will contribute is required to simulate the evolut
 ## Step-by-step tutorial
 The material is self-paced and it is necessary that you work through the sections in order.
 
-* [Fork](./fork.md) - Copy your collaborator's repository 
-* [Clone](./clone.md) - Copy your repository locally
-* [Commit](./commit.md) - Make changes and save them locally
-* [Push](./push.md) - Update your remote repository with your local changes
-* [Pull request](./pull-request.md) - Ask your collaborator to integrate your changes in their repository
-* [Merged results](./merge.md) - Observe the merge of all contributions
-* [Pull the upstream repository into your fork](./pull-upstream.md) - Update your fork with all contributions made to the original repository
+* [Fork](fork.qmd) - Copy your collaborator's repository 
+* [Clone](clone.qmd) - Copy your repository locally
+* [Commit](commit.qmd) - Make changes and save them locally
+* [Push](push.qmd) - Update your remote repository with your local changes
+* [Pull request](pull-request.qmd) - Ask your collaborator to integrate your changes in their repository
+* [Merged results](merge.qmd) - Observe the merge of all contributions
+* [Pull the upstream repository into your fork](pull-upstream.qmd) - Update your fork with all contributions made to the original repository
 
-***
+
+::: {.callout-tip title="Support the LMU Open Science Center!"}
+
+**Like this tutorial? Be sure to give [the repository]({{< meta repo-url >}}) a star and [follow us on GitHub](https://github.com/lmu-osc)!**
+:::
+
+::: {.callout-tip title="Questions about this tutorial?"}
+**If you have questions for the author of this tutorial, please take a look at the [About](about.qmd) page.**
+:::

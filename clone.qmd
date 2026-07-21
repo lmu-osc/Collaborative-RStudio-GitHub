@@ -1,5 +1,7 @@
 ---
 title: Clone your GitHub repository
+aliases: [clone.html]
+
 ---
 
 ***
