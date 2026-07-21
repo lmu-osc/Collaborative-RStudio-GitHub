@@ -64,3 +64,6 @@ _site/
 
 # ignore posi assistant settings
 .posit/assistant
+
+# ignore individual file
+plot-trait-evolution.html
