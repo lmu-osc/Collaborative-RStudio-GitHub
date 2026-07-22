@@ -1,5 +1,7 @@
 ---
 title: Pull upstream repository into your fork
+aliases: [pull-upstream.html]
+
 ---
 
 ***
@@ -22,16 +24,15 @@ To integrate all the contributions made to the original repository into your loc
    ```
   
 
-    ![](./assets/command-line.png)
+    ![](/assets/command-line.png)
 
 6. **RStudio**: check in the Files tab that the new contributions appeared.
 
 7. **RStudio**: push those local changes to your GitHub repository (you can do this from the command line by typing `git push`)
 
-    ![](./assets/final-push.png)
+    ![](/assets/final-push.png)
 
 
 You are done!
 
 ***
-

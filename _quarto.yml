@@ -1,56 +1,75 @@
+# Begin Project
 project:
-  type: website
+  type: tutorial-template
+  render:
+    - "*.qmd"
+    - "!plot-trait-evolution.qmd"
+# End Project
 
-
-
+# Begin Website
+repo-url: https://github.com/lmu-osc/Collaborative-RStudio-GitHub
 website:
-  title: ""
+  title: "Collaborative coding with GitHub and RStudio"
   page-footer:
-    center: "Copyright, 2024 Open Science Center at LMU Munich"
     border: false
-  search:
-    location: sidebar
+    center: © 2024 Anna Krystalli, Malika Ihle, Adam Kenny. Published by LMU Open Science Center. Licensed under CC BY-SA 4.0.
   repo-url: https://github.com/lmu-osc/Collaborative-RStudio-GitHub
-  repo-actions: [edit, issue]
-  page-navigation: true
-  favicon: assets/LMU-OSC_favicon.jpg
-  margin-header: |
-    ![](/assets/LMU-OSC_logo.jpg){width="175"}
+
   navbar:
+    right:
+      - about.qmd
     left:
-      - href: index.md
+      - href: index.qmd
+        text: Home
+    tools:
+      - icon: github
+        menu:
+          - text: Source Code
+            href: https://github.com/lmu-osc/Collaborative-RStudio-GitHub
+          - text: Report a Bug
+            href: https://github.com/lmu-osc/Collaborative-RStudio-GitHub/issues
+      - icon: house-heart
+        url: https://www.osc.lmu.de/
 
   sidebar:
-    style: docked
+    style: "docked"
     contents:
-      - text: "Home"
-        href: index.md
+      - text: "Overview"
+        href: index.qmd
       - section: "Tutorial"
         contents:
-          - href: fork.md
+          - href: fork/index.qmd
             text: "Fork a Repo"
-          - href: clone.md
+          - href: clone/index.qmd
             text: "Clone a Repo"
-          - href: commit.md
+          - href: commit/index.qmd
             text: "Commit to a Project"
-          - href: push.md
+          - href: push/index.qmd
             text: "Push Changes"
-          - href: pull-request.md
+          - href: pull-request/index.qmd
             text: "Pull Request"
-          - href: merge.md
+          - href: merge/index.qmd
             text: "Merge Changes"
-          - href: pull-upstream.md
+          - href: pull-upstream/index.qmd
             text: "Pull Upstream"
+# End Website
 
+# Begin Includes
+include-in-header:
+  - file: matomo-analytics.html
+include-after-body:
+  - file: footer/footer.html
+# End Includes
+
+# Begin Format
 format:
-  html:
-    theme:
-      - cosmo
-      - custom.scss
-    css: styles.css
-    toc: true
-    include-in-header:
-      - file: matomo-analytics.html
+  tutorial-template-html+tutorial:
+    css:
+      - footer/footer-style.css
+# End Format
 
+# Begin Editor
+editor: source
+# End Editor
 
-
+bibliography: references.bib
