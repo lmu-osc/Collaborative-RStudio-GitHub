@@ -28,7 +28,7 @@
     "href": "index.html",
     "title": "Collaborative coding with GitHub and RStudio",
     "section": "",
-    "text": "This work was originally created by Anna Krystalli from RSE-Sheffield under a MIT licence (original repository). It was subsequently adapted by Malika Ihle during her time at Reproducible Research Oxford, with the contributions of Adam Kenny. It is now maintained by Malika Ihle at the LMU Open Science Center. The overview image is from Dumitru Uzun. The exercice is based on the research of Jen Bright who also kindly provided the gifs used in the exercice. You are free to use, copy, modify, distribute this work for your own projects.\nThis session follows-up from the Introduction to RStudio, Git, and GitHub and is accompanied by this 10 min introductory videorecording.",
+    "text": "This work was originally created by Anna Krystalli from RSE-Sheffield under a MIT licence (original repository). It was subsequently adapted by Malika Ihle during her time at Reproducible Research Oxford, with the contributions of Adam Kenny. It is now maintained by Malika Ihle at the LMU Open Science Center. The overview image is from Dumitru Uzun. The exercise is based on the research of Jen Bright who also kindly provided the gifs used in the exercise. You are free to use, copy, modify, distribute this work for your own projects.\nThis session follows-up from the Introduction to RStudio, Git, and GitHub and is accompanied by this 10 min introductory videorecording.",
     "crumbs": [
       "Home",
       "Overview"
@@ -39,7 +39,7 @@
     "href": "index.html#about-this-work",
     "title": "Collaborative coding with GitHub and RStudio",
     "section": "",
-    "text": "This work was originally created by Anna Krystalli from RSE-Sheffield under a MIT licence (original repository). It was subsequently adapted by Malika Ihle during her time at Reproducible Research Oxford, with the contributions of Adam Kenny. It is now maintained by Malika Ihle at the LMU Open Science Center. The overview image is from Dumitru Uzun. The exercice is based on the research of Jen Bright who also kindly provided the gifs used in the exercice. You are free to use, copy, modify, distribute this work for your own projects.\nThis session follows-up from the Introduction to RStudio, Git, and GitHub and is accompanied by this 10 min introductory videorecording.",
+    "text": "This work was originally created by Anna Krystalli from RSE-Sheffield under a MIT licence (original repository). It was subsequently adapted by Malika Ihle during her time at Reproducible Research Oxford, with the contributions of Adam Kenny. It is now maintained by Malika Ihle at the LMU Open Science Center. The overview image is from Dumitru Uzun. The exercise is based on the research of Jen Bright who also kindly provided the gifs used in the exercise. You are free to use, copy, modify, distribute this work for your own projects.\nThis session follows-up from the Introduction to RStudio, Git, and GitHub and is accompanied by this 10 min introductory videorecording.",
     "crumbs": [
       "Home",
       "Overview"
@@ -98,14 +98,14 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "This site was authored by Anna Krystalli, Malika Ihle, and Adam Kenny. Edits and contributions were made by Malika Ihle."
+    "text": "This site was authored by Anna Krystalli, Malika Ihle, and Adam Kenny."
   },
   {
     "objectID": "about.html#contributors",
     "href": "about.html#contributors",
     "title": "About",
     "section": "",
-    "text": "This site was authored by Anna Krystalli, Malika Ihle, and Adam Kenny. Edits and contributions were made by Malika Ihle."
+    "text": "This site was authored by Anna Krystalli, Malika Ihle, and Adam Kenny."
   },
   {
     "objectID": "about.html#licenses",
@@ -164,7 +164,7 @@
     "href": "merge/index.html",
     "title": "Observe the merged contributions",
     "section": "",
-    "text": "!!! If the session is live!!!: go see your collaborator merge your pull request! Most likely it will be a thumbs up and result in a merge! But your collaborator might also request a correction if they spot an error.\n\nIf you are following this tutorial on your own asynchronously: These are the steps of the merge:\n\n\nCollaborator’s screen - GitHub: In their pull request tab, they will inspect the files you changed and ensure that the parameters were inputted correctly so as to not break down their code down the line.\n\n\n\n\nCollaborator’s screen - GitHub: They will navigate back to the conversation tab of your pull request to write some comments, merge your pull request, and confirm the merge.\n\n\n\n\nCollaborator’s screen - RStudio: They will pull their GitHub repository into their local repository.\n\n\n\n\nCollaborator’s screen - RStudio: They will knit the Rmarkdown file plot-trait-evolution/index.qmd which sources all the contributed files. Knitting a Rmarkdown file means rendering the Rmarkdown code (that integrate R code and Markdown code) into a defined format, here a html file. This file generates plots and figures based on the parameters that were contributed.\n\n\n\n\nCollaborator’s screen - RStudio: If all packages needed to run this script and to knit the file into a html page are installed, this file will generate plots and figures based on the parameters that were contributed.\n \n\n\nThis is how one can integrate data and code to a common repository shared amongst collaborators!\n\n\n\n\n\n\n Back to top",
+    "text": "!!! If the session is live!!!: go see your collaborator merge your pull request! Most likely it will be a thumbs up and result in a merge! But your collaborator might also request a correction if they spot an error.\n\nIf you are following this tutorial on your own asynchronously: These are the steps of the merge:\n\n\nCollaborator’s screen - GitHub: In their pull request tab, they will inspect the files you changed and ensure that the parameters were inputted correctly so as to not break down their code down the line.\n\n\n\n\nCollaborator’s screen - GitHub: They will navigate back to the conversation tab of your pull request to write some comments, merge your pull request, and confirm the merge.\n\n\n\n\nCollaborator’s screen - RStudio: They will pull their GitHub repository into their local repository.\n\n\n\n\nCollaborator’s screen - RStudio: They will render the Quarto file plot-trait-evolution/index.qmd which sources all the contributed files. Rendering a Quarto file means compiling the R code chunks and plain Markdown script of the file into a combine document of a defined format, here a html file. This file generates plots and figures based on the parameters that were contributed.\n\n\n\n\nCollaborator’s screen - RStudio: If all packages needed to run this script and to knit the file into a html page are installed, this file will generate plots and figures based on the parameters that were contributed.\n \n\n\nThis is how one can integrate data and code to a common repository shared amongst collaborators!\n\n\n\n\n\n\n Back to top",
     "crumbs": [
       "Home",
       "Tutorial",

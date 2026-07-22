@@ -112,15 +112,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
-
-<!-- See the OSC internal instructions on how to generate and include the code necessary for the Matomo Analytics tracking. -->
-
-
 <!-- Matomo -->
 <script>
-if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
-
-}
+  if (location.hostname !== "localhost" && location.hostname !== "127.0.0.1") {
+    var _paq = (window._paq = window._paq || []);
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(["trackPageView"]);
+    _paq.push(["enableLinkTracking"]);
+    (function () {
+      var u = "https://www.analytics.osc.lmu.de/";
+      _paq.push(["setTrackerUrl", u + "matomo.php"]);
+      _paq.push(["setSiteId", "11"]);
+      var d = document,
+        g = d.createElement("script"),
+        s = d.getElementsByTagName("script")[0];
+      g.async = true;
+      g.src = u + "matomo.js";
+      s.parentNode.insertBefore(g, s);
+    })();
+  }
 </script>
 <!-- End Matomo Code -->
 
@@ -491,8 +501,8 @@ if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
 </ol>
 <p><br></p>
 <ol start="4" type="1">
-<li><p><strong>Collaborator’s screen - RStudio</strong>: They will knit the Rmarkdown file <code>plot-trait-evolution/index.qmd</code> which sources all the contributed files. Knitting a Rmarkdown file means rendering the Rmarkdown code (that integrate R code and Markdown code) into a defined format, here a html file. This file generates plots and figures based on the parameters that were contributed.</p>
-<p><img src="../assets/knit.png" class="img-fluid"></p></li>
+<li><p><strong>Collaborator’s screen - RStudio</strong>: They will render the Quarto file <code>plot-trait-evolution/index.qmd</code> which sources all the contributed files. Rendering a Quarto file means compiling the R code chunks and plain Markdown script of the file into a combine document of a defined format, here a html file. This file generates plots and figures based on the parameters that were contributed.</p>
+<p><img src="../assets/render.png" class="img-fluid"></p></li>
 </ol>
 <p><br></p>
 <ol start="5" type="1">
@@ -1029,9 +1039,9 @@ if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
 <span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">br</span><span class="ot"> </span><span class="dt">/&gt;</span></span>
 <span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>**Collaborator's screen - RStudio**: They will knit the Rmarkdown file <span class="in">`plot-trait-evolution/index.qmd`</span> which sources all the contributed files. Knitting a Rmarkdown file means rendering the Rmarkdown code (that integrate R code and Markdown code) into a defined format, here a html file. This file generates plots and figures based on the parameters that were contributed.  </span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>**Collaborator's screen - RStudio**: They will render the Quarto file <span class="in">`plot-trait-evolution/index.qmd`</span> which sources all the contributed files. Rendering a Quarto file means compiling the R code chunks and plain Markdown script of the file into a combine document of a defined format, here a html file. This file generates plots and figures based on the parameters that were contributed.  </span>
 <span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>    <span class="al">![](/assets/knit.png)</span></span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>    <span class="al">![](/assets/render.png)</span></span>
 <span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">br</span><span class="ot"> </span><span class="dt">/&gt;</span></span>
 <span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a></span>

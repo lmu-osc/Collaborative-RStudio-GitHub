@@ -132,15 +132,25 @@ div.csl-indent {
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
-
-<!-- See the OSC internal instructions on how to generate and include the code necessary for the Matomo Analytics tracking. -->
-
-
 <!-- Matomo -->
 <script>
-if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
-
-}
+  if (location.hostname !== "localhost" && location.hostname !== "127.0.0.1") {
+    var _paq = (window._paq = window._paq || []);
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(["trackPageView"]);
+    _paq.push(["enableLinkTracking"]);
+    (function () {
+      var u = "https://www.analytics.osc.lmu.de/";
+      _paq.push(["setTrackerUrl", u + "matomo.php"]);
+      _paq.push(["setSiteId", "11"]);
+      var d = document,
+        g = d.createElement("script"),
+        s = d.getElementsByTagName("script")[0];
+      g.async = true;
+      g.src = u + "matomo.js";
+      s.parentNode.insertBefore(g, s);
+    })();
+  }
 </script>
 <!-- End Matomo Code -->
 
@@ -538,7 +548,7 @@ if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
 
 <section id="contributors" class="level2">
 <h2 class="anchored" data-anchor-id="contributors">Contributors</h2>
-<p>This site was authored by Anna Krystalli, Malika Ihle, and Adam Kenny. Edits and contributions were made by Malika Ihle.</p>
+<p>This site was authored by Anna Krystalli, Malika Ihle, and Adam Kenny.</p>
 </section>
 <section id="licenses" class="level2">
 <h2 class="anchored" data-anchor-id="licenses">Licenses</h2>
@@ -1075,7 +1085,7 @@ Coding with GitHub and RStudio.”</span> LMU Open Science Center. <a href="http
 <span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="fu">## Contributors</span></span>
 <span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>This site was authored by Anna Krystalli, Malika Ihle, and Adam Kenny. Edits and contributions were made by Malika Ihle.</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>This site was authored by Anna Krystalli, Malika Ihle, and Adam Kenny.</span>
 <span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="fu">## Licenses</span></span>
 <span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a></span>

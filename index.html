@@ -111,15 +111,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
-
-<!-- See the OSC internal instructions on how to generate and include the code necessary for the Matomo Analytics tracking. -->
-
-
 <!-- Matomo -->
 <script>
-if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
-
-}
+  if (location.hostname !== "localhost" && location.hostname !== "127.0.0.1") {
+    var _paq = (window._paq = window._paq || []);
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(["trackPageView"]);
+    _paq.push(["enableLinkTracking"]);
+    (function () {
+      var u = "https://www.analytics.osc.lmu.de/";
+      _paq.push(["setTrackerUrl", u + "matomo.php"]);
+      _paq.push(["setSiteId", "11"]);
+      var d = document,
+        g = d.createElement("script"),
+        s = d.getElementsByTagName("script")[0];
+      g.async = true;
+      g.src = u + "matomo.js";
+      s.parentNode.insertBefore(g, s);
+    })();
+  }
 </script>
 <!-- End Matomo Code -->
 
@@ -478,7 +488,7 @@ if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
 
 <section id="about-this-work" class="level2">
 <h2 class="anchored" data-anchor-id="about-this-work">About this work</h2>
-<p>This work was originally created by <a href="https://github.com/annakrystalli">Anna Krystalli</a> from <a href="https://github.com/RSE-Sheffield">RSE-Sheffield</a> under a <a href="https://github.com/lmu-osc/Collaborative-RStudio-GitHub/blob/master/LICENSE">MIT licence</a> (<a href="https://github.com/RSE-Sheffield/collaborative_github_exercise">original repository</a>). It was subsequently adapted by <a href="https://ox.ukrn.org/people/#MalikaIhle">Malika Ihle</a> during her time at <a href="https://ox.ukrn.org/">Reproducible Research Oxford</a>, with the contributions of <a href="https://github.com/Kennyanthro">Adam Kenny</a>. It is now maintained by <a href="https://www.osc.uni-muenchen.de/about_us/coordinator/index.html">Malika Ihle</a> at the <a href="https://www.osc.uni-muenchen.de/index.html">LMU Open Science Center</a>. The overview image is from <a href="https://duzun.me/tips/git">Dumitru Uzun</a>. The exercice is based on the <a href="http://eprints.whiterose.ac.uk/99452/1/Bright%20et%20al.%202016_SelfArchive.pdf">research</a> of <a href="https://twitter.com/MorphobeakGeek">Jen Bright</a> who also kindly provided the gifs used in the exercice. You are free to use, copy, modify, distribute this work for your own projects.</p>
+<p>This work was originally created by <a href="https://github.com/annakrystalli">Anna Krystalli</a> from <a href="https://github.com/RSE-Sheffield">RSE-Sheffield</a> under a MIT licence (<a href="https://github.com/RSE-Sheffield/collaborative_github_exercise">original repository</a>). It was subsequently adapted by <a href="https://ox.ukrn.org/people/#MalikaIhle">Malika Ihle</a> during her time at <a href="https://ox.ukrn.org/">Reproducible Research Oxford</a>, with the contributions of Adam Kenny. It is now maintained by <a href="https://www.osc.lmu.de/people/people/malika-ihle.html">Malika Ihle</a> at the <a href="https://www.osc.lmu.de/">LMU Open Science Center</a>. The overview image is from <a href="https://duzun.me/">Dumitru Uzun</a>. The exercise is based on the <a href="http://eprints.whiterose.ac.uk/99452/1/Bright%20et%20al.%202016_SelfArchive.pdf">research</a> of Jen Bright who also kindly provided the gifs used in the exercise. You are free to use, copy, modify, distribute this work for your own projects.</p>
 <p>This session follows-up from the <a href="https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/">Introduction to RStudio, Git, and GitHub</a> and is accompanied by this 10 min introductory <a href="https://osf.io/dcqt9/">videorecording</a>.</p>
 <hr>
 </section>
@@ -1036,7 +1046,7 @@ if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">## About this work</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>This work was originally created by <span class="co">[</span><span class="ot">Anna Krystalli</span><span class="co">](https://github.com/annakrystalli)</span> from <span class="co">[</span><span class="ot">RSE-Sheffield</span><span class="co">](https://github.com/RSE-Sheffield)</span> under a <span class="co">[</span><span class="ot">MIT licence</span><span class="co">](https://github.com/lmu-osc/Collaborative-RStudio-GitHub/blob/master/LICENSE)</span> (<span class="co">[</span><span class="ot">original repository</span><span class="co">](https://github.com/RSE-Sheffield/collaborative_github_exercise)</span>). It was subsequently adapted by <span class="co">[</span><span class="ot">Malika Ihle</span><span class="co">](https://ox.ukrn.org/people/#MalikaIhle)</span> during her time at <span class="co">[</span><span class="ot">Reproducible Research Oxford</span><span class="co">](https://ox.ukrn.org/)</span>, with the contributions of <span class="co">[</span><span class="ot">Adam Kenny</span><span class="co">](https://github.com/Kennyanthro)</span>. It is now maintained by <span class="co">[</span><span class="ot">Malika Ihle</span><span class="co">](https://www.osc.uni-muenchen.de/about_us/coordinator/index.html)</span> at the <span class="co">[</span><span class="ot">LMU Open Science Center</span><span class="co">](https://www.osc.uni-muenchen.de/index.html)</span>. The overview image is from <span class="co">[</span><span class="ot">Dumitru Uzun</span><span class="co">](https://duzun.me/tips/git)</span>. The exercice is based on the <span class="co">[</span><span class="ot">research</span><span class="co">](http://eprints.whiterose.ac.uk/99452/1/Bright%20et%20al.%202016_SelfArchive.pdf)</span> of <span class="co">[</span><span class="ot">Jen Bright</span><span class="co">](https://twitter.com/MorphobeakGeek)</span> who also kindly provided the gifs used in the exercice. You are free to use, copy, modify, distribute this work for your own projects.</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>This work was originally created by <span class="co">[</span><span class="ot">Anna Krystalli</span><span class="co">](https://github.com/annakrystalli)</span> from <span class="co">[</span><span class="ot">RSE-Sheffield</span><span class="co">](https://github.com/RSE-Sheffield)</span> under a MIT licence (<span class="co">[</span><span class="ot">original repository</span><span class="co">](https://github.com/RSE-Sheffield/collaborative_github_exercise)</span>). It was subsequently adapted by <span class="co">[</span><span class="ot">Malika Ihle</span><span class="co">](https://ox.ukrn.org/people/#MalikaIhle)</span> during her time at <span class="co">[</span><span class="ot">Reproducible Research Oxford</span><span class="co">](https://ox.ukrn.org/)</span>, with the contributions of Adam Kenny. It is now maintained by <span class="co">[</span><span class="ot">Malika Ihle</span><span class="co">](https://www.osc.lmu.de/people/people/malika-ihle.html)</span> at the <span class="co">[</span><span class="ot">LMU Open Science Center</span><span class="co">](https://www.osc.lmu.de/)</span>. The overview image is from <span class="co">[</span><span class="ot">Dumitru Uzun</span><span class="co">](https://duzun.me/)</span>. The exercise is based on the <span class="co">[</span><span class="ot">research</span><span class="co">](http://eprints.whiterose.ac.uk/99452/1/Bright%20et%20al.%202016_SelfArchive.pdf)</span> of Jen Bright who also kindly provided the gifs used in the exercise. You are free to use, copy, modify, distribute this work for your own projects.</span>
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>This session follows-up from the <span class="co">[</span><span class="ot">Introduction to RStudio, Git, and GitHub</span><span class="co">](https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/)</span> and is accompanied by this 10 min introductory <span class="co">[</span><span class="ot">videorecording</span><span class="co">](https://osf.io/dcqt9/)</span>. </span>
