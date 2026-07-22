@@ -28,7 +28,7 @@ google-scholar: true
 
 ## Contributors
 
-This site was authored by Anna Krystalli, Malika Ihle, and Adam Kenny. Edits and contributions were made by Malika Ihle.
+This site was authored by Anna Krystalli, Malika Ihle, and Adam Kenny.
 
 ## Licenses
 
