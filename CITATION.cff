@@ -1,0 +1,40 @@
+cff-version: 1.2.0
+message: "If you use this tutorial, please cite it as below."
+authors:
+  - family-names: "Krystalli"
+    given-names: "Anna"
+    orcid: "https://orcid.org/0000-0002-2378-4915"
+    affiliation: "University of Sheffield"
+  - family-names: "Ihle"
+    given-names: "Malika"
+    orcid: "https://orcid.org/0000-0002-9543-9310"
+    affiliation: "LMU Open Science Center"
+  - family-names: "Kenny"
+    given-names: "Adam"
+    orcid: "https://orcid.org/0000-0002-1316-7382"
+    affiliation: "University of Oxford"
+title: "Collaborative coding with GitHub and RStudio"
+version: 0.3.0
+doi: 10.5281/zenodo.0000000
+date-released: 2024-01-15
+repository-code: "https://github.com/lmu-osc/Collaborative-RStudio-GitHub"
+url: "https://lmu-osc.github.io/Collaborative-RStudio-GitHub/"
+preferred-citation:
+  authors:
+    - family-names: "Krystalli"
+      given-names: "Anna"
+      orcid: "https://orcid.org/0000-0002-2378-4915"
+    - family-names: "Ihle"
+      given-names: "Malika"
+      orcid: "https://orcid.org/0000-0002-9543-9310"
+    - family-names: "Kenny"
+      given-names: "Adam"
+      orcid: "https://orcid.org/0000-0002-1316-7382"
+  title: "Collaborative coding with GitHub and RStudio"
+  year: 2024
+  doi: 10.5281/zenodo.0000000
+  publisher:
+    name: "LMU Open Science Center"
+  repository-code: "https://github.com/lmu-osc/Collaborative-RStudio-GitHub"
+  url: "https://lmu-osc.github.io/Collaborative-RStudio-GitHub/"
+  type: "book"
