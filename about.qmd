@@ -44,3 +44,10 @@ This tutorial was primarily written in 2024 using RStudio and GitHub. Major chan
 ## Tutorial Template Quarto Extension
 
 This tutorial was written using the [`lmu-osc/tutorial-template`](https://github.com/lmu-osc/tutorial-template) Quarto extension [@callahan2026].
+
+::: {#refs}
+:::
+
+## How to Cite
+
+**To cite this tutorial, please refer to the project's [CITATION.cff](CITATION.cff) file or use the BibTeX citation provided in the appendix below.**
