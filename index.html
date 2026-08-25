@@ -1,12 +1,9 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
-
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.10.18">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-
-
 <title>Collaborative coding with GitHub and RStudio</title>
 <style>
 /* Default styles provided by pandoc.
@@ -63,7 +60,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }
 </style>
 
-
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
@@ -86,8 +82,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-188b87d2eecf63d90488fc07321c5074.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/bootstrap/bootstrap-dark-eb085aa7c0f1d8411752f2c1fdfaa824.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-188b87d2eecf63d90488fc07321c5074.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
-<script id="quarto-search-options" type="application/json">{
+<link href="site_libs/bootstrap/bootstrap-188b87d2eecf63d90488fc07321c5074.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light"><script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
   "collapse-after": 3,
@@ -112,10 +107,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-submit-button-title": "Submit",
     "search-label": "Search"
   }
-}</script>
-<style>html{ scroll-behavior: smooth; }</style>
-<!-- Matomo -->
-<script>
+}</script><style>html{ scroll-behavior: smooth; }</style>
+<!-- Matomo --><script>
   if (location.hostname !== "localhost" && location.hostname !== "127.0.0.1") {
     var _paq = (window._paq = window._paq || []);
     /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
@@ -133,14 +126,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       s.parentNode.insertBefore(g, s);
     })();
   }
-</script>
-<!-- End Matomo Code -->
-
-
-<link rel="stylesheet" href="site_libs/quarto-contrib/quarto-project/lmu-osc/tutorial-template/assets/bootstrap-grid.min.css">
+</script><!-- End Matomo Code --><link rel="stylesheet" href="site_libs/quarto-contrib/quarto-project/lmu-osc/tutorial-template/assets/bootstrap-grid.min.css">
 <link rel="stylesheet" href="footer/footer-style.css">
 </head>
-
 <body class="nav-sidebar docked nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
@@ -306,14 +294,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </script>
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
-      <div class="navbar-container container-fluid">
+  <header id="quarto-header" class="headroom fixed-top"><nav class="navbar navbar-expand-lg " data-bs-theme="dark"><div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="site_libs/quarto-contrib/quarto-project/lmu-osc/tutorial-template/_extensions/lmu-osc/osc-brand/lmu-osc-favicon.jpg" alt="LMU Open Science Center open book icon" class="navbar-logo light-content">
-    <img src="site_libs/quarto-contrib/quarto-project/lmu-osc/tutorial-template/_extensions/lmu-osc/osc-brand/lmu-osc-favicon.jpg" alt="LMU Open Science Center open book icon" class="navbar-logo dark-content">
-    </a>
+    <img src="site_libs/quarto-contrib/quarto-project/lmu-osc/tutorial-template/_extensions/lmu-osc/osc-brand/lmu-osc-favicon.jpg" alt="LMU Open Science Center open book icon" class="navbar-logo light-content"><img src="site_libs/quarto-contrib/quarto-project/lmu-osc/tutorial-template/_extensions/lmu-osc/osc-brand/lmu-osc-favicon.jpg" alt="LMU Open Science Center open book icon" class="navbar-logo dark-content"></a>
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Collaborative coding with GitHub and RStudio</span>
     </a>
@@ -323,23 +307,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
+<li class="nav-item">
     <a class="nav-link active" href="./index.html" aria-current="page"> 
 <span class="menu-text">Home</span></a>
   </li>  
 </ul>
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item">
+<ul class="navbar-nav navbar-nav-scroll ms-auto">
+<li class="nav-item">
     <a class="nav-link" href="./about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
 </ul>
-          </div> <!-- /navcollapse -->
+</div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools tools-wide">
     <div class="dropdown">
       <a href="" title="" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label=""><i class="bi bi-github"></i></a>
       <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
-          <li>
+<li>
             <a class="dropdown-item quarto-navbar-tools-item" href="https://github.com/lmu-osc/Collaborative-RStudio-GitHub">
             Source Code
             </a>
@@ -350,7 +334,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
             </a>
           </li>
       </ul>
-    </div>
+</div>
     <a href="https://www.osc.lmu.de/" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-house-heart"></i></a>
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
   <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
@@ -360,9 +344,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </a>
 </div>
       </div> <!-- /container-fluid -->
-    </nav>
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
+    </nav><nav class="quarto-secondary-nav"><div class="container-fluid d-flex">
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
@@ -373,17 +355,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <i class="bi bi-search"></i>
       </button>
     </div>
-  </nav>
-</header>
-<!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+  </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto"><div class="pt-lg-2 mt-2 text-left sidebar-header">
       <a href="./index.html" class="sidebar-logo-link">
-      <img src="site_libs/quarto-contrib/quarto-project/lmu-osc/tutorial-template/_extensions/lmu-osc/osc-brand/lmu-osc-logo.svg" alt="LMU Open Science Center logo" class="sidebar-logo light-content py-0 d-lg-inline d-none">
-      <img src="site_libs/quarto-contrib/quarto-project/lmu-osc/tutorial-template/_extensions/lmu-osc/osc-brand/lmu-osc-logo-dark.svg" alt="LMU Open Science Center logo" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
-      </a>
+      <img src="site_libs/quarto-contrib/quarto-project/lmu-osc/tutorial-template/_extensions/lmu-osc/osc-brand/lmu-osc-logo.svg" alt="LMU Open Science Center logo" class="sidebar-logo light-content py-0 d-lg-inline d-none"><img src="site_libs/quarto-contrib/quarto-project/lmu-osc/tutorial-template/_extensions/lmu-osc/osc-brand/lmu-osc-logo-dark.svg" alt="LMU Open Science Center logo" class="sidebar-logo dark-content py-0 d-lg-inline d-none"></a>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
@@ -392,7 +368,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Overview</span></a>
@@ -406,8 +382,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./fork/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Fork a Repo</span></a>
@@ -450,28 +426,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
 </li>
       </ul>
-  </li>
+</li>
     </ul>
-    </div>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+</div>
+</nav><div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-   
-  <ul>
-  <li><a href="#about-this-work" id="toc-about-this-work" class="nav-link active" data-scroll-target="#about-this-work">About this work</a></li>
+        <nav id="TOC" role="doc-toc" class="toc-active"><ul>
+<li><a href="#about-this-work" id="toc-about-this-work" class="nav-link active" data-scroll-target="#about-this-work">About this work</a></li>
   <li><a href="#overview-of-the-exercice" id="toc-overview-of-the-exercice" class="nav-link" data-scroll-target="#overview-of-the-exercice">Overview of the exercice</a></li>
   <li><a href="#step-by-step-tutorial" id="toc-step-by-step-tutorial" class="nav-link" data-scroll-target="#step-by-step-tutorial">Step-by-step tutorial</a></li>
-  </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/lmu-osc/Collaborative-RStudio-GitHub/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/Collaborative-RStudio-GitHub/blob/main/index.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/lmu-osc/Collaborative-RStudio-GitHub/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+  </ul><div class="toc-actions"><ul><li><a href="https://github.com/lmu-osc/Collaborative-RStudio-GitHub/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/Collaborative-RStudio-GitHub/blob/main/index.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/lmu-osc/Collaborative-RStudio-GitHub/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
 <div class="quarto-title-block"><div><h1 class="title">Collaborative coding with GitHub and RStudio</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
 </div>
 
@@ -486,50 +454,50 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   
 
 
-</header>
-
-
-<section id="about-this-work" class="level2">
-<h2 class="anchored" data-anchor-id="about-this-work">About this work</h2>
+</header><section id="about-this-work" class="level2"><h2 class="anchored" data-anchor-id="about-this-work">About this work</h2>
 <p>This work was originally created by <a href="https://github.com/annakrystalli">Anna Krystalli</a> from <a href="https://github.com/RSE-Sheffield">RSE-Sheffield</a> under a MIT licence (<a href="https://github.com/RSE-Sheffield/collaborative_github_exercise">original repository</a>). It was subsequently adapted by <a href="https://ox.ukrn.org/people/#MalikaIhle">Malika Ihle</a> during her time at <a href="https://ox.ukrn.org/">Reproducible Research Oxford</a>, with the contributions of Adam Kenny. It is now maintained by <a href="https://www.osc.lmu.de/people/people/malika-ihle.html">Malika Ihle</a> at the <a href="https://www.osc.lmu.de/">LMU Open Science Center</a>. The overview image is from <a href="https://duzun.me/">Dumitru Uzun</a>. The exercise is based on the <a href="http://eprints.whiterose.ac.uk/99452/1/Bright%20et%20al.%202016_SelfArchive.pdf">research</a> of Jen Bright who also kindly provided the gifs used in the exercise. You are free to use, copy, modify, distribute this work for your own projects.</p>
 <p>This session follows-up from the <a href="https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/">Introduction to RStudio, Git, and GitHub</a> and is accompanied by this 10 min introductory <a href="https://osf.io/dcqt9/">videorecording</a>.</p>
-<hr>
-</section>
-<section id="overview-of-the-exercice" class="level2">
-<h2 class="anchored" data-anchor-id="overview-of-the-exercice">Overview of the exercice</h2>
+<hr></section><section id="overview-of-the-exercice" class="level2"><h2 class="anchored" data-anchor-id="overview-of-the-exercice">Overview of the exercice</h2>
 <p>In this session, you will</p>
 <ul>
-<li><strong>fork</strong> a GitHub repository (i.e.&nbsp;copy a collaborator’s repository to your own GitHub account)<br>
+<li>
+<strong>fork</strong> a GitHub repository (i.e.&nbsp;copy a collaborator’s repository to your own GitHub account)<br>
 </li>
-<li><strong>clone</strong> it locally (i.e.&nbsp;copy it to your computer while maintaining a connection to your remote (GitHub) version)<br>
+<li>
+<strong>clone</strong> it locally (i.e.&nbsp;copy it to your computer while maintaining a connection to your remote (GitHub) version)<br>
 </li>
 <li>create a new file locally and <strong>commit</strong> it to your local repository (i.e.&nbsp;save the file locally in your version control system)<br>
 </li>
-<li><strong>push</strong> your changes to your GitHub version (i.e.&nbsp;synchronise your local changes with your remote repository)<br>
+<li>
+<strong>push</strong> your changes to your GitHub version (i.e.&nbsp;synchronise your local changes with your remote repository)<br>
 </li>
 <li>contribute a file to the original repository by making a <strong>pull request</strong> (i.e.&nbsp;request your collaborator, the owner of the original repository, to fetch your proposed changes and merge them into the original repository)<br>
 </li>
 <li>observe the outcome of all contributions merged by your collaborator<br>
 </li>
-<li><strong>pull the upstream repository into your fork</strong> (i.e.&nbsp;update your fork to reflect all the changes that happened in your collaborator’s original repository)</li>
+<li>
+<strong>pull the upstream repository into your fork</strong> (i.e.&nbsp;update your fork to reflect all the changes that happened in your collaborator’s original repository)</li>
 </ul>
-<p><img src="./assets/new-overview.png" width="750"><br>
-<br></p>
+<p><img src="./assets/new-overview.png" width="750"><br><br></p>
 <p>In this example, the file you will contribute is required to simulate the evolutionary trajectory of an imaginary bird species’ beak size. We will use RStudio and GitHub to collate all species files and plot them all up together at the end. We will also discover the skull and beak shapes associated with each species you contributed (after they ‘evolved’ through a simple brownian motion model which assumes steps to progress completely at random).</p>
 <p><img src="gif.gif" class="img-fluid"></p>
-<hr>
-</section>
-<section id="step-by-step-tutorial" class="level2">
-<h2 class="anchored" data-anchor-id="step-by-step-tutorial">Step-by-step tutorial</h2>
+<hr></section><section id="step-by-step-tutorial" class="level2"><h2 class="anchored" data-anchor-id="step-by-step-tutorial">Step-by-step tutorial</h2>
 <p>The material is self-paced and it is necessary that you work through the sections in order.</p>
 <ul>
-<li><a href="./fork/index.html">Fork</a> - Copy your collaborator’s repository</li>
-<li><a href="./clone/index.html">Clone</a> - Copy your repository locally</li>
-<li><a href="./commit/index.html">Commit</a> - Make changes and save them locally</li>
-<li><a href="./push/index.html">Push</a> - Update your remote repository with your local changes</li>
-<li><a href="./pull-request/index.html">Pull request</a> - Ask your collaborator to integrate your changes in their repository</li>
-<li><a href="./merge/index.html">Merged results</a> - Observe the merge of all contributions</li>
-<li><a href="./pull-upstream/index.html">Pull the upstream repository into your fork</a> - Update your fork with all contributions made to the original repository</li>
+<li>
+<a href="./fork/index.html">Fork</a> - Copy your collaborator’s repository</li>
+<li>
+<a href="./clone/index.html">Clone</a> - Copy your repository locally</li>
+<li>
+<a href="./commit/index.html">Commit</a> - Make changes and save them locally</li>
+<li>
+<a href="./push/index.html">Push</a> - Update your remote repository with your local changes</li>
+<li>
+<a href="./pull-request/index.html">Pull request</a> - Ask your collaborator to integrate your changes in their repository</li>
+<li>
+<a href="./merge/index.html">Merged results</a> - Observe the merge of all contributions</li>
+<li>
+<a href="./pull-upstream/index.html">Pull the upstream repository into your fork</a> - Update your fork with all contributions made to the original repository</li>
 </ul>
 <div class="callout callout-style-default callout-tip callout-titled" title="Support the LMU Open Science Center!">
 <div class="callout-header d-flex align-content-center">
@@ -561,10 +529,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <!-- -->
 
-</section>
-
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
-<script id="quarto-html-after-body" type="application/javascript">
+</section><a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
     if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
@@ -1034,9 +999,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       }
     }
   });
-  </script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
+  </script><nav class="page-navigation"><div class="nav-page nav-page-previous">
   </div>
   <div class="nav-page nav-page-next">
       <a href="./fork/index.html" class="pagination-link" aria-label="Fork a Repo">
@@ -1048,60 +1011,68 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> Collaborative coding with GitHub and RStudio</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">## About this work</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>This work was originally created by <span class="co">[</span><span class="ot">Anna Krystalli</span><span class="co">](https://github.com/annakrystalli)</span> from <span class="co">[</span><span class="ot">RSE-Sheffield</span><span class="co">](https://github.com/RSE-Sheffield)</span> under a MIT licence (<span class="co">[</span><span class="ot">original repository</span><span class="co">](https://github.com/RSE-Sheffield/collaborative_github_exercise)</span>). It was subsequently adapted by <span class="co">[</span><span class="ot">Malika Ihle</span><span class="co">](https://ox.ukrn.org/people/#MalikaIhle)</span> during her time at <span class="co">[</span><span class="ot">Reproducible Research Oxford</span><span class="co">](https://ox.ukrn.org/)</span>, with the contributions of Adam Kenny. It is now maintained by <span class="co">[</span><span class="ot">Malika Ihle</span><span class="co">](https://www.osc.lmu.de/people/people/malika-ihle.html)</span> at the <span class="co">[</span><span class="ot">LMU Open Science Center</span><span class="co">](https://www.osc.lmu.de/)</span>. The overview image is from <span class="co">[</span><span class="ot">Dumitru Uzun</span><span class="co">](https://duzun.me/)</span>. The exercise is based on the <span class="co">[</span><span class="ot">research</span><span class="co">](http://eprints.whiterose.ac.uk/99452/1/Bright%20et%20al.%202016_SelfArchive.pdf)</span> of Jen Bright who also kindly provided the gifs used in the exercise. You are free to use, copy, modify, distribute this work for your own projects.</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>This session follows-up from the <span class="co">[</span><span class="ot">Introduction to RStudio, Git, and GitHub</span><span class="co">](https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/)</span> and is accompanied by this 10 min introductory <span class="co">[</span><span class="ot">videorecording</span><span class="co">](https://osf.io/dcqt9/)</span>. </span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>***</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="fu">## Overview of the exercice</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: true</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co">#| warning: false</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(downlit)</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(xml2)</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>In this session, you will  </span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>**fork** a GitHub repository (i.e. copy a collaborator's repository to your own GitHub account)    </span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>**clone** it locally (i.e. copy it to your computer while maintaining a connection to your remote (GitHub) version)    </span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>create a new file locally and **commit** it to your local repository (i.e. save the file locally in your version control system)  </span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>**push** your changes to your GitHub version (i.e. synchronise your local changes with your remote repository)  </span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>contribute a file to the original repository by making a **pull request** (i.e. request your collaborator, the owner of the original repository, to fetch your proposed changes and merge them into the original repository)   </span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>observe the outcome of all contributions merged by your collaborator   </span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>**pull the upstream repository into your fork** (i.e. update your fork to reflect all the changes that happened in your collaborator's original repository)  </span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="fu">## About this work</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>This work was originally created by <span class="co">[</span><span class="ot">Anna Krystalli</span><span class="co">](https://github.com/annakrystalli)</span> from <span class="co">[</span><span class="ot">RSE-Sheffield</span><span class="co">](https://github.com/RSE-Sheffield)</span> under a MIT licence (<span class="co">[</span><span class="ot">original repository</span><span class="co">](https://github.com/RSE-Sheffield/collaborative_github_exercise)</span>). It was subsequently adapted by <span class="co">[</span><span class="ot">Malika Ihle</span><span class="co">](https://ox.ukrn.org/people/#MalikaIhle)</span> during her time at <span class="co">[</span><span class="ot">Reproducible Research Oxford</span><span class="co">](https://ox.ukrn.org/)</span>, with the contributions of Adam Kenny. It is now maintained by <span class="co">[</span><span class="ot">Malika Ihle</span><span class="co">](https://www.osc.lmu.de/people/people/malika-ihle.html)</span> at the <span class="co">[</span><span class="ot">LMU Open Science Center</span><span class="co">](https://www.osc.lmu.de/)</span>. The overview image is from <span class="co">[</span><span class="ot">Dumitru Uzun</span><span class="co">](https://duzun.me/)</span>. The exercise is based on the <span class="co">[</span><span class="ot">research</span><span class="co">](http://eprints.whiterose.ac.uk/99452/1/Bright%20et%20al.%202016_SelfArchive.pdf)</span> of Jen Bright who also kindly provided the gifs used in the exercise. You are free to use, copy, modify, distribute this work for your own projects.</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>This session follows-up from the <span class="co">[</span><span class="ot">Introduction to RStudio, Git, and GitHub</span><span class="co">](https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/)</span> and is accompanied by this 10 min introductory <span class="co">[</span><span class="ot">videorecording</span><span class="co">](https://osf.io/dcqt9/)</span>. </span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>***</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="fu">## Overview of the exercice</span></span>
 <span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">img</span><span class="ot"> src</span><span class="op">=</span><span class="st">"/assets/new-overview.png"</span><span class="ot"> width</span><span class="op">=</span><span class="st">"750"</span><span class="dt">&gt;</span>  </span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">br</span><span class="dt">/&gt;</span></span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>In this example, the file you will contribute is required to simulate the evolutionary trajectory of an imaginary bird species' beak size. We will use RStudio and GitHub to collate all species files and plot them all up together at the end. We will also discover the skull and beak shapes associated with each species you contributed (after they 'evolved' through a simple brownian motion  model which assumes steps to progress completely at random).</span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="al">![](gif.gif)</span></span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>***</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>In this session, you will  </span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>**fork** a GitHub repository (i.e. copy a collaborator's repository to your own GitHub account)    </span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>**clone** it locally (i.e. copy it to your computer while maintaining a connection to your remote (GitHub) version)    </span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>create a new file locally and **commit** it to your local repository (i.e. save the file locally in your version control system)  </span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>**push** your changes to your GitHub version (i.e. synchronise your local changes with your remote repository)  </span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>contribute a file to the original repository by making a **pull request** (i.e. request your collaborator, the owner of the original repository, to fetch your proposed changes and merge them into the original repository)   </span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>observe the outcome of all contributions merged by your collaborator   </span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>**pull the upstream repository into your fork** (i.e. update your fork to reflect all the changes that happened in your collaborator's original repository)  </span>
 <span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a><span class="fu">## Step-by-step tutorial</span></span>
-<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>The material is self-paced and it is necessary that you work through the sections in order.</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">img</span><span class="ot"> src</span><span class="op">=</span><span class="st">"/assets/new-overview.png"</span><span class="ot"> width</span><span class="op">=</span><span class="st">"750"</span><span class="dt">&gt;</span>  </span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">br</span><span class="dt">/&gt;</span></span>
 <span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span><span class="co">[</span><span class="ot">Fork</span><span class="co">](fork/index.qmd)</span> - Copy your collaborator's repository </span>
-<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span><span class="co">[</span><span class="ot">Clone</span><span class="co">](clone/index.qmd)</span> - Copy your repository locally</span>
-<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span><span class="co">[</span><span class="ot">Commit</span><span class="co">](commit/index.qmd)</span> - Make changes and save them locally</span>
-<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span><span class="co">[</span><span class="ot">Push</span><span class="co">](push/index.qmd)</span> - Update your remote repository with your local changes</span>
-<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span><span class="co">[</span><span class="ot">Pull request</span><span class="co">](pull-request/index.qmd)</span> - Ask your collaborator to integrate your changes in their repository</span>
-<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span><span class="co">[</span><span class="ot">Merged results</span><span class="co">](merge/index.qmd)</span> - Observe the merge of all contributions</span>
-<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span><span class="co">[</span><span class="ot">Pull the upstream repository into your fork</span><span class="co">](pull-upstream/index.qmd)</span> - Update your fork with all contributions made to the original repository</span>
-<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip title="Support the LMU Open Science Center!"}</span>
-<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>**Like this tutorial? Be sure to give [the repository]({{&lt; meta repo-url &gt;}}) a star and [follow us on GitHub](https://github.com/lmu-osc)!**</span>
-<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip title="Questions about this tutorial?"}</span>
-<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>**If you have questions for the author of this tutorial, please take a look at the [About](about.qmd) page.**</span>
-<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a>:::</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>In this example, the file you will contribute is required to simulate the evolutionary trajectory of an imaginary bird species' beak size. We will use RStudio and GitHub to collate all species files and plot them all up together at the end. We will also discover the skull and beak shapes associated with each species you contributed (after they 'evolved' through a simple brownian motion  model which assumes steps to progress completely at random).</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a><span class="al">![](gif.gif)</span></span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>***</span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a><span class="fu">## Step-by-step tutorial</span></span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>The material is self-paced and it is necessary that you work through the sections in order.</span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span><span class="co">[</span><span class="ot">Fork</span><span class="co">](fork/index.qmd)</span> - Copy your collaborator's repository </span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span><span class="co">[</span><span class="ot">Clone</span><span class="co">](clone/index.qmd)</span> - Copy your repository locally</span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span><span class="co">[</span><span class="ot">Commit</span><span class="co">](commit/index.qmd)</span> - Make changes and save them locally</span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span><span class="co">[</span><span class="ot">Push</span><span class="co">](push/index.qmd)</span> - Update your remote repository with your local changes</span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span><span class="co">[</span><span class="ot">Pull request</span><span class="co">](pull-request/index.qmd)</span> - Ask your collaborator to integrate your changes in their repository</span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span><span class="co">[</span><span class="ot">Merged results</span><span class="co">](merge/index.qmd)</span> - Observe the merge of all contributions</span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span><span class="co">[</span><span class="ot">Pull the upstream repository into your fork</span><span class="co">](pull-upstream/index.qmd)</span> - Update your fork with all contributions made to the original repository</span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip title="Support the LMU Open Science Center!"}</span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a>**Like this tutorial? Be sure to give [the repository]({{&lt; meta repo-url &gt;}}) a star and [follow us on GitHub](https://github.com/lmu-osc)!**</span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip title="Questions about this tutorial?"}</span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a>**If you have questions for the author of this tutorial, please take a look at the [About](about.qmd) page.**</span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a>:::</span>
+</code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
-<footer class="footer">
-  <div class="nav-footer">
+<footer class="footer"><div class="nav-footer">
     <div class="nav-footer-left">
       &nbsp;
     </div>   
@@ -1112,9 +1083,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       &nbsp;
     </div>
   </div>
-</footer>
-<footer class="osc-footer-card text-white py-5">
-  <div class="container">
+</footer><footer class="osc-footer-card text-white py-5"><div class="container">
     <div class="row gy-4">
       <div class="col-12 col-md-6 col-lg-3 ">
         <h4 class="fw-bold fs-5 fs-lg-4 text-white">
@@ -1130,7 +1099,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div class="col-12 col-md-6 col-lg-3">
         <h4 class="fw-semibold fs-5 text-white">Contact</h4>
         <ul class="list-unstyled mt-2 mb-0">
-          <li>
+<li>
             <a href="mailto:felix.schoenbrodt@psy.lmu.de" class="text-white text-decoration-underline">
               <i class="bi bi-envelope me-1"></i>
               Prof. Dr. Felix Schönbrodt (Managing Director)
@@ -1149,12 +1118,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
             </a>
           </li>
         </ul>
-      </div>
+</div>
 
       <div class="col-12 col-md-6 col-lg-3">
         <h4 class="fw-semibold fs-5 text-white">Join Us</h4>
         <ul class="list-unstyled mt-2 mb-0">
-          <li>
+<li>
             <a href="https://lists.lrz.de/mailman/listinfo/lmu-osc" target="_blank" class="text-white text-decoration-underline" aria-label="Subscribe to our announcement list (opens in new window)">
               Subscribe to our announcement list
             </a>
@@ -1170,7 +1139,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
             </a>
           </li>
         </ul>
-      </div>
+</div>
 
       <div class="col-12 col-md-6 col-lg-3 d-flex align-items-start gap-3 osc-footer-socials">
         <a href="https://github.com/lmu-osc" target="_blank" class="text-white fs-3" aria-label="LMU Open Science Center on GitHub (opens in new window)">
@@ -1190,8 +1159,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </div>
 
     <hr class="my-4 border-light">
-
-    <div class="d-flex flex-wrap gap-3 small">
+<div class="d-flex flex-wrap gap-3 small">
       <a href="./footer/imprint.html" class="text-white text-decoration-underline">Imprint</a>
       <span aria-hidden="true">|</span>
       <a href="./footer/privacy.html" class="text-white text-decoration-underline">Privacy Policy</a>
@@ -1201,8 +1169,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
   </div>
 </footer>
-
-
 
 
 <script src="site_libs/quarto-html/zenscroll-min.js"></script>
