@@ -10,7 +10,7 @@ sig2 <- 4.2
 species.name <- "clock"
 
 # e.g. "red"
-color <- "light green"
+color <- "lightgreen"
 
 # tip: pick a color using rstudio colour picker.
 # Addins > Colour Picker (to install: install.packages("colourpicker"))
