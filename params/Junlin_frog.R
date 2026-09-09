@@ -7,7 +7,7 @@
 sig2 <-4
 
 # e.g. "anas_krystallinus"
-species.name <- Junlin_frog
+species.name <- "Junlin_frog"
 
 # e.g. "red"
 color <- c("blueviolet")
