@@ -7,7 +7,7 @@
 sig2 <- 3.2
 
 # e.g. "anas_krystallinus"
-species.name <- laura_warrior
+species.name <- "laura_warrior"
 
 # e.g. "red"
 color <- "#ebeb17"
