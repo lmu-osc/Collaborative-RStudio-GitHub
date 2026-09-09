@@ -4,18 +4,18 @@
 # input parameters
 
 # sigma2: 0 < value < 5
-sig2 <-
+sig2 <- 4.6
 
-# e.g. "anas_krystallinus"
-species.name <-
+# e.g. "CCChenxi"
+species.name <- "CCChenxi"
 
 # e.g. "red"
-color <-
+color <- "#18F5C9A5"
 
 # tip: pick a color using rstudio colour picker.
 # Addins > Colour Picker (to install: install.packages("colourpicker"))
   # Note: please do not include install.packages("PKG-NAME") in your final R script!
-  # This can break part of our rendering pipeline. Please install at your command 
+  # This can break part of our rendering pipeline. Please install at your command
   # line or simply ask your instructor if uncertain.
 # If you use this, don't forget to put it back as a comment
 # before pushing and creating your pull request.
