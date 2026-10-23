@@ -7,7 +7,7 @@
 sig2 <- 3
 
 # e.g. "anas_krystallinus"
-species.name <-Pyranicus_Exis
+species.name <- "Pyranicus_Exis"
 
 # e.g. "red"
 color <- "#7FFFD4"
