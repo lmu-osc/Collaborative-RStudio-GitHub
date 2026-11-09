@@ -50,7 +50,7 @@ We'll use the parameters supplied in your scripts to generate brownian trait evo
 
 ```{r}
 #getting the file names for everything except the template that has undefined values
-spp.files <- dir("params/")[dir("params/") != "params_tmpl.R"]
+spp.files <- dir("params/")[dir("params/") != "params-tmpl.R"]
 
 for (spp in spp.files) {
   # source parameters for each species
