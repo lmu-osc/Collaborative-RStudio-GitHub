@@ -10,7 +10,7 @@ sig2 <-3.5
 species.name <- "anna_rocks"
 
 # e.g. "red" (do use quotation marks to make this a string, not a R object)
-color <- "grey"
+color <- "green"
 
 
 
