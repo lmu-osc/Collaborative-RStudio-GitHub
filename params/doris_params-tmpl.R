@@ -10,7 +10,7 @@ sig2 <- 1.7
 species.name <- "holz_fonolz"
 
 # e.g. "red" (do use quotation marks to make this a string, not a R object)
-color <- c("grey")
+color <- c("#008B8B")
 
 # tip: pick a color using rstudio colour picker.
 # Addins > Colour Picker (to install: install.packages("colourpicker"))
