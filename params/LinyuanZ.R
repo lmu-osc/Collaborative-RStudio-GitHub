@@ -7,7 +7,7 @@
 sig2 <-3.5
 
 # e.g. "anas_krystallinus" (do use quotation marks to make this a string, not a R object)
-species.name <-Linyuan
+species.name <-"Linyuan"
 
 # e.g. "red" (do use quotation marks to make this a string, not a R object)
 color <-"#31DBB3"
